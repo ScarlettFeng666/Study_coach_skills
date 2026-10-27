@@ -1,0 +1,1293 @@
+{
+  "schema_version": 1,
+  "pack_id": "swe113-exam1-html-demo-v1",
+  "title": "SWE 113 · 考试学习包演示",
+  "subtitle": "英文题干 / 中文纠错 · 30 道单选",
+  "language": "zh-CN",
+  "notice": "本演示由用户提供的 SWE113_Exam1_30Q_Quiz_Based_Mock.html 转换而来，保留原 30 题的题干、选项、答案和中文解析；新增的逐项纠错与复习卡根据原解析整理。未取得原始课件、Study Guide 或 Canvas 测验核验，来源中的 PPT 页码均为原 HTML 的转述。本演示的全部 30 题同时用于练习与模考，模考会重复已见题，只适合熟悉流程与复习，成绩不能作为未见题测评或真实考试预测。",
+  "plan": {
+    "total_minutes": 90,
+    "practice_minutes": 45,
+    "mock_minutes": 30,
+    "review_minutes": 15,
+    "rationale": "90 分钟演示安排：练习 30 题，每题独立作答估计 75 秒，共 37.5 分钟，另留约 7.5 分钟阅读重点解析，合计 45 分钟；重复同一 30 题进行 30 分钟熟悉性模考，平均每题 60 秒；最后用 10 分钟复盘错题与薄弱知识点，5 分钟主动回忆速通卡，共 15 分钟。estimated_seconds 仅计独立作答，不包含解析；实际速度较慢时应减少本次练习题数或延长时间。题池来自唯一提供的 30 题，所以练习与模考重复，不作独立掌握度评估。"
+  },
+  "sources": [
+    {
+      "id": "s-001",
+      "label": "原 HTML Q01 · L1 slides 13–21",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L1 slides 13–21；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 1 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-002",
+      "label": "原 HTML Q02 · L1 slides 16–19",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L1 slides 16–19；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 2 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-003",
+      "label": "原 HTML Q03 · L2 slide 18; Exam Study Guide L1",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L2 slide 18; Exam Study Guide L1；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 3 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-004",
+      "label": "原 HTML Q04 · L2 slides 8, 25",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L2 slides 8, 25；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 4 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-005",
+      "label": "原 HTML Q05 · L2 slide 27",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L2 slide 27；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 5 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-006",
+      "label": "原 HTML Q06 · L2 slide 24; L3 slide 10",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L2 slide 24; L3 slide 10；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 6 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-007",
+      "label": "原 HTML Q07 · L2 slide 27; L3 slides 14–15",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L2 slide 27; L3 slides 14–15；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 7 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-008",
+      "label": "原 HTML Q08 · L3 slide 21",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L3 slide 21；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 8 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-009",
+      "label": "原 HTML Q09 · L3 slide 25",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L3 slide 25；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 9 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-010",
+      "label": "原 HTML Q10 · L3 slides 24, 26",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L3 slides 24, 26；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 10 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-011",
+      "label": "原 HTML Q11 · L3 slides 22, 26",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L3 slides 22, 26；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 11 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-012",
+      "label": "原 HTML Q12 · L3 slides 22–23",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L3 slides 22–23；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 12 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-013",
+      "label": "原 HTML Q13 · L3 slides 22–23",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L3 slides 22–23；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 13 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-014",
+      "label": "原 HTML Q14 · L4 slides 8, 23–24",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L4 slides 8, 23–24；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 14 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-015",
+      "label": "原 HTML Q15 · L4 slides 10–15",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L4 slides 10–15；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 15 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-016",
+      "label": "原 HTML Q16 · L4 slides 3–4, 23",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L4 slides 3–4, 23；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 16 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-017",
+      "label": "原 HTML Q17 · L4 slides 32–36",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L4 slides 32–36；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 17 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-018",
+      "label": "原 HTML Q18 · L4 slides 30–31",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L4 slides 30–31；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 18 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-019",
+      "label": "原 HTML Q19 · L5 slide 8",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L5 slide 8；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 19 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-020",
+      "label": "原 HTML Q20 · L5 slides 8, 12, 15–16",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L5 slides 8, 12, 15–16；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 20 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-021",
+      "label": "原 HTML Q21 · L5 slide 22",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L5 slide 22；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 21 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-022",
+      "label": "原 HTML Q22 · L5 slides 23, 25–28",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L5 slides 23, 25–28；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 22 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-023",
+      "label": "原 HTML Q23 · L6 slides 7–12",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slides 7–12；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 23 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-024",
+      "label": "原 HTML Q24 · L6 slide 16; Exam Study Guide L5",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slide 16; Exam Study Guide L5；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 24 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-025",
+      "label": "原 HTML Q25 · L6 slides 17–20",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slides 17–20；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 25 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-026",
+      "label": "原 HTML Q26 · L6 slides 27–34, 36–38",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slides 27–34, 36–38；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 26 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-027",
+      "label": "原 HTML Q27 · L6 slides 40–42; L3 slide 24",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slides 40–42; L3 slide 24；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 27 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-028",
+      "label": "原 HTML Q28 · L6 slide 44",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slide 44；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 28 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-029",
+      "label": "原 HTML Q29 · L6 slides 51–53",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slides 51–53；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 29 题，题干、答案与中文解析原样保留。"
+    },
+    {
+      "id": "s-030",
+      "label": "原 HTML Q30 · L6 slides 47–48; slide 16",
+      "status": "unverified",
+      "detail": "原始HTML转述，未取得原PPT核验：L6 slides 47–48; slide 16；已读取 SWE113_Exam1_30Q_Quiz_Based_Mock.html 的 BANK 第 30 题，题干、答案与中文解析原样保留。"
+    }
+  ],
+  "topics": [
+    {
+      "id": "team",
+      "title": "团队形成与冲突处理",
+      "summary": "团队依次经历 Forming、Storming、Norming、Performing。冲突阶段需要直接沟通、明确问题并使用共同约定的 ground rules，随后建立协作规范并走向成熟协作。",
+      "pitfalls": [
+        "Storming 的冲突需要处理，不能假设它会自行永久消失。",
+        "Norming 是形成协作规则，不是团队成员尚未见面的阶段。"
+      ],
+      "recall_prompt": "按顺序说出团队形成的四阶段，并说明 Storming 时如何处理职责分歧。",
+      "quick_tip": "先认识与定位，再协调冲突，再建立规范，最后成熟协作；冲突靠沟通与共同规则处理。",
+      "source_ids": [
+        "s-001",
+        "s-002"
+      ]
+    },
+    {
+      "id": "re-purpose",
+      "title": "RE 的目的、定义与风险投入",
+      "summary": "需求工程帮助团队理解问题和利益相关者需要，系统化地规格化并管理需求，降低交付错误系统的风险。能运行不代表解决真实问题；愿意承受的风险越低，通常越需要投入需求工作。",
+      "pitfalls": [
+        "Requirement 的三种定义不等于 Contemporary RE 的三部分。",
+        "反比关系针对愿意接受的风险，不能直接替换为系统本身的风险值。"
+      ],
+      "recall_prompt": "为什么能把代码写出来仍可能做错项目？愿意接受的风险降低时，RE 投入如何变化？",
+      "quick_tip": "RE 首先帮助团队做对的东西；降低可接受风险，需要更多需求工作。",
+      "source_ids": [
+        "s-003",
+        "s-004",
+        "s-006"
+      ]
+    },
+    {
+      "id": "re-lifecycle",
+      "title": "需求生命周期与信息整理",
+      "summary": "RE 的四项主要任务是获取需求、分析并文档化、验证、管理并演化。访谈所得碎片信息仍需分析、记录假设与异常、量化关键属性并与利益相关者验证；政策变化后的更新属于管理与演化。",
+      "pitfalls": [
+        "不要把 Analysis 与 Documentation 拆开后漏掉 Managing/Evolving。",
+        "写成文档不代表需求已经验证，也不代表以后不会变化。"
+      ],
+      "recall_prompt": "从询问需要到确认记录，再到政策变化后更新，分别属于哪些 RE 任务？",
+      "quick_tip": "获取 → 分析与记录 → 验证 → 管理与演化；记录下来以后仍需确认并持续维护。",
+      "source_ids": [
+        "s-005",
+        "s-007",
+        "s-030"
+      ]
+    },
+    {
+      "id": "requirement-types",
+      "title": "功能、过程要求与技术约束",
+      "summary": "功能需求描述系统必须提供的行为；项目/过程需求约定开发与交付方式或期限；技术约束预先限制可选的实现方案。指定 React 或必须集成既有平台属于约束。",
+      "pitfalls": [
+        "看到 UI 不等于易用性要求；指定 UI 技术栈仍是实现约束。",
+        "原型交付日期约束项目交付，不是在描述系统运行时行为。"
+      ],
+      "recall_prompt": "排序订单、按期交付原型、指定 React，三者分别是什么需求类别？为什么？",
+      "quick_tip": "看它约定什么：系统做什么是功能，如何交付是过程，必须选用什么方案是约束。",
+      "source_ids": [
+        "s-008",
+        "s-009",
+        "s-010",
+        "s-027"
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "质量属性与可测量的性能要求",
+      "summary": "吞吐量和延迟衡量性能；可用性与安全性属于其他具体质量属性。获取性能需求时，应询问可测量的阈值和适用场景，例如高峰时段更新停车信息的最大延迟。",
+      "pitfalls": [
+        "99.99% 在线时间是 Availability，不是吞吐量。",
+        "禁止未授权访问体现安全属性；没有指定技术工具时，不应直接判为技术约束。",
+        "“好看”“快速”等词缺少阈值与场景，难以检验。"
+      ],
+      "recall_prompt": "transactions/second、在线时间比例、未授权访问限制分别衡量什么？怎样把性能期望问得可测量？",
+      "quick_tip": "先识别衡量对象，再看可测阈值与场景：吞吐/延迟是性能，在线比例是可用性，访问保护是安全。",
+      "source_ids": [
+        "s-011",
+        "s-012",
+        "s-013",
+        "s-026"
+      ]
+    },
+    {
+      "id": "goals",
+      "title": "从解决方案追问业务目标",
+      "summary": "Goal 描述要产生的业务价值或成果，也就是为什么需要系统。面对地图、按钮或技术栈等方案，先追问它解决什么运营问题，再考虑替代方案与可衡量的成功标准。",
+      "pitfalls": [
+        "按钮位置、数据库和框架是实现手段，不能替代业务目标。",
+        "有了高层目标后仍要补充可衡量的 Success Criteria。"
+      ],
+      "recall_prompt": "利益相关者提出“必须有地图”时，如何追问才能找到 Goal？",
+      "quick_tip": "把“做哪个功能”追问为“解决什么问题、产生什么价值”，再确定可衡量的成功标准。",
+      "source_ids": [
+        "s-014",
+        "s-015"
+      ]
+    },
+    {
+      "id": "scope-risk",
+      "title": "范围决策与可接受的剩余风险",
+      "summary": "新增功能应结合目标一致性、价值、优先级、投入、工期影响及风险决定是否纳入。需求获取不能保证永远结束；关键缺口与新场景已很少、剩余风险可接受时，可以进入建设。",
+      "pitfalls": [
+        "功能看起来很小或由经理提出，不代表可以跳过范围影响分析。",
+        "开始建设不要求所有需求永远不变，也不要求实现每个人提出的所有功能。"
+      ],
+      "recall_prompt": "工期紧张时如何决定接受新增功能？出现哪些信号时可以停止密集需求获取？",
+      "quick_tip": "加功能先看目标、收益与代价；进入建设前确认关键缺口少且剩余风险可接受。",
+      "source_ids": [
+        "s-016",
+        "s-028"
+      ]
+    },
+    {
+      "id": "context",
+      "title": "系统边界与上下文图",
+      "summary": "System Boundary 区分系统本身与它的上下文；Context Boundary 区分相关上下文与无关环境。原题描述的上下文图以中心圆表示系统、矩形表示外部实体、带方向且标注的箭头表示流，把系统视为黑盒。",
+      "pitfalls": [
+        "上下文图不展开内部类或私有方法。",
+        "System Boundary 与 Context Boundary 划分的对象不同。"
+      ],
+      "recall_prompt": "两种边界各自分开什么？上下文图中的中心、外部实体和箭头分别表示什么？",
+      "quick_tip": "先划系统与环境，再划相关与无关；上下文图关注系统同外部实体的交互。",
+      "source_ids": [
+        "s-017",
+        "s-018"
+      ]
+    },
+    {
+      "id": "stakeholders",
+      "title": "利益相关者识别、分析与建模",
+      "summary": "Stakeholder 是影响需求或受到系统影响的任何人，范围包括直接用户以外的运维、监管等群体。分析可记录动机、权力、关系、专长、期望、可用时间与优先级；Rich Picture 用节点、关系边及关注点气泡表达这些关系。",
+      "pitfalls": [
+        "只访问付费者、直接用户或有批准权的人，会漏掉相关群体。",
+        "Rich Picture 的主体是利益相关者与其关系；Context Diagram 关注系统、外部实体与流。"
+      ],
+      "recall_prompt": "为什么停车系统不能只访谈司机与管理员？Rich Picture 与 Context Diagram 的关注点有何不同？",
+      "quick_tip": "沿“谁影响、谁受影响”找人；分析其动机与关系，再选择合适模型。",
+      "source_ids": [
+        "s-019",
+        "s-020",
+        "s-021",
+        "s-022"
+      ]
+    },
+    {
+      "id": "elicitation",
+      "title": "多源需求获取、情境观察与共创",
+      "summary": "需求获取是在探索问题世界并发现需求，信息来源包括利益相关者、文档和既有系统，也受上下文、目标与观察影响。工作情境观察可揭示难以表达的隐性任务及异常；创新可与利益相关者共同探索深层目标、替代方案、未来场景及技术利弊。",
+      "pitfalls": [
+        "不能只依赖项目赞助者的意见或开发者假设。",
+        "需求获取不等于照单实现客户提出的方案。",
+        "创新不等于原样复制流程，也不等于由开发者单方面强加创意。"
+      ],
+      "recall_prompt": "当工作人员说不清真实流程时应如何获取需求？创新需求又如何与利益相关者共同发现？",
+      "quick_tip": "用多种信息源理解问题；说不清的流程到情境中观察，创新围绕目标共同探索。",
+      "source_ids": [
+        "s-023",
+        "s-024",
+        "s-025",
+        "s-029"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-001",
+      "topic_id": "team",
+      "type": "single",
+      "prompt": "Which statement best describes the stages of team formation?",
+      "options": [
+        "Forming focuses on initial orientation; Storming involves conflicts; Norming establishes collaborative behaviors; Performing is mature teamwork.",
+        "Storming is when teamwork becomes fully mature and conflict disappears permanently.",
+        "Norming happens before team members first meet each other.",
+        "Performing is when a team first negotiates who has authority."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "四阶段顺序为 Forming → Storming → Norming → Performing。Storming 是角色与权力协调、冲突较多的阶段；Norming 建立协作规则；Performing 代表团队协作成熟。",
+      "option_explanations": [
+        "正确：四阶段及各自重点与原解析一致。",
+        "Storming 是角色、权力与冲突协调阶段，不是成熟协作，也不保证冲突永久消失。",
+        "Norming 在成员初步认识和冲突协调之后，用于建立协作规则。",
+        "最初协调角色与权力更接近 Storming；Performing 表示成熟协作。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-001"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-002",
+      "topic_id": "team",
+      "type": "single",
+      "prompt": "A SWE 113 team has a disagreement about responsibilities. Which is the BEST response?",
+      "options": [
+        "Ignore it and hope the conflict goes away.",
+        "Communicate directly, use agreed team ground rules, and address the specific issue.",
+        "Allow the most senior member to decide without discussion.",
+        "Treat disagreement as evidence the team should stop working together."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "老师在 Storming 的建议是明确沟通、把问题写下来、参照 ground rules，并正面处理冲突；不要逃避。",
+      "option_explanations": [
+        "逃避没有处理职责分歧，违背正面沟通与处理冲突的建议。",
+        "正确：直接沟通、共同规则和具体问题对应原解析的处理办法。",
+        "单凭资历独断跳过沟通与共同规则，不能体现协作处理分歧。",
+        "出现分歧是 Storming 中可能发生的情况，不足以推出应终止合作。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-002"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-003",
+      "topic_id": "re-purpose",
+      "type": "single",
+      "prompt": "According to the lectures, what is the hardest part of software engineering?",
+      "options": [
+        "Choosing the fastest programming language.",
+        "Writing code with no syntax errors.",
+        "Building the right thing by understanding the problem and agreeing on what to build.",
+        "Building software without any involvement from stakeholders."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Lecture 2 Slide 18 强调：The hardest part of software engineering is building the right thing。技术上可运行不等于解决了真实问题。",
+      "option_explanations": [
+        "语言性能不是原解析强调的核心难点；核心是理解问题并做对的系统。",
+        "没有语法错误只说明代码层面通过，仍可能没有解决真实问题。",
+        "正确：理解问题、形成共识并构建正确的东西是原解析的重点。",
+        "排除利益相关者会妨碍理解真实需要，与做对系统的目标相反。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-003"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-004",
+      "topic_id": "re-purpose",
+      "type": "single",
+      "prompt": "Which choice BEST captures the three main parts of the contemporary definition of Requirements Engineering?",
+      "options": [
+        "Stakeholder need, system capability, and documented representation.",
+        "Code implementation, debugging, and deployment.",
+        "Interviews, prototypes, and programming.",
+        "Systematic specification/management, understanding stakeholder needs, and minimizing the risk of the wrong system."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "重要纠错：第一个选项是 Requirement 的三种定义（Lecture 2 Slide 8），不是 Contemporary RE 的三部分。现代 RE 强调系统化规格与管理、理解 Stakeholders、降低错误交付风险。",
+      "option_explanations": [
+        "这列出的是 Requirement 的三种定义，混淆了 Requirement 与 Contemporary RE。",
+        "实现、调试、部署是开发活动，未表达理解需要及降低错误交付风险。",
+        "访谈和原型可用于需求工作，但工具活动清单不是现代 RE 定义的三部分。",
+        "正确：系统化规格与管理、理解利益相关者、降低交付错误系统风险与原解析一致。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-004"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-005",
+      "topic_id": "re-lifecycle",
+      "type": "single",
+      "prompt": "Which list contains ALL four major tasks of RE, as presented in Lecture 2?",
+      "options": [
+        "Elicit; analyze and document; validate; manage and evolve requirements.",
+        "Elicit; analyze; specify; validate (with no subsequent management).",
+        "Design; code; test; deploy.",
+        "Interview; prototype; implement; market."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "准确的四项是 Eliciting、Analyzing AND Documenting、Validating、Managing AND Evolving。Analysis 和 Documentation 组成一个任务，Managing/Evolving 不能漏掉。",
+      "option_explanations": [
+        "正确：分析与文档化合为一项，且保留了管理与演化。",
+        "把分析与规格拆成清单后，明确遗漏了后续管理与演化。",
+        "这是设计到部署的开发活动清单，未列出 RE 的四项任务。",
+        "访谈和原型只是部分方法，实施与营销也不能替代验证及管理演化。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-005"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-006",
+      "topic_id": "re-purpose",
+      "type": "single",
+      "prompt": "The effort invested in RE should be ______ proportional to the level of risk one is willing to accept.",
+      "options": [
+        "directly",
+        "unrelated",
+        "inversely",
+        "randomly"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "允许承担的风险越低，需要投入越多 RE；允许承担较高风险时，可以减少前期需求工作。关键词是 willing to accept/take，不是系统本身的风险值。",
+      "option_explanations": [
+        "对愿意承担的风险而言，原解析给的是反比；低风险容忍度需要更多 RE。",
+        "原解析明确把 RE 投入与可接受风险联系起来，并非无关。",
+        "正确：越不愿承受错误系统的风险，越需要投入需求工作。",
+        "投入与风险容忍度有明确关系，不能归为随机。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-006"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-007",
+      "topic_id": "re-lifecycle",
+      "type": "single",
+      "prompt": "The APM team asks drivers about unmet parking needs, confirms a written requirement with them, and later updates it when campus rules change. Which sequence is correct?",
+      "options": [
+        "Validation → Elicitation → Documentation",
+        "Elicitation → Validation → Management/Evolution",
+        "Evolution → Implementation → Testing",
+        "Analysis → Deployment → Architecture"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "询问真实需要是 Elicitation；确认记录的需求是否符合需要是 Validation；后续因政策变化修改需求属于 Management/Evolution。",
+      "option_explanations": [
+        "询问未满足需要先属于 Elicitation；原解析也把最后的更新归为演化。",
+        "正确：问需要、确认记录、因政策修改依次是获取、验证、管理演化。",
+        "题干没有实现或测试活动，首个访谈也不是 Evolution。",
+        "题干没有部署或架构设计；确认记录对应 Validation。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-007"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-008",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "“A user shall be able to sort order history by date, item name, or price.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Project/process requirement",
+        "Performance requirement",
+        "Constraint"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "描述系统必须提供的行为（排序订单），所以是 Functional Requirement，不是速度或开发限制。",
+      "option_explanations": [
+        "正确：排序订单历史是系统必须提供的行为。",
+        "题干没有约定开发或交付过程，而是在描述产品行为。",
+        "题干没有速度、延迟或吞吐量阈值，不能按性能要求分类。",
+        "题干没有指定实现技术或其他方案限制，而是要求提供排序功能。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-008"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-009",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "“A prototype of the system shall be delivered by November 1.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Specific quality requirement",
+        "Project/process requirement",
+        "Technical constraint"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "交付截止日期属于系统如何被开发/交付的规定，即 Project/process Requirement。",
+      "option_explanations": [
+        "原型的交付截止日期描述项目交付，不是系统运行时的功能。",
+        "截止日期没有描述可用性、安全性等产品质量属性。",
+        "正确：规定何时交付原型属于项目/过程要求。",
+        "题干未指定必须采用的技术方案；约定的是交付时间。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-009"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-010",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "“The system user interface shall be implemented using React.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Constraint",
+        "Performance requirement",
+        "Reliability requirement"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "React 是预先指定技术方案，缩小可选择的实现空间，属于 Constraint。不要看到 UI 就以为是 Usability Requirement。",
+      "option_explanations": [
+        "题干指定实现技术，未描述 UI 要提供的功能行为。",
+        "正确：预先指定 React 限制了可选实现方案。",
+        "没有延迟或吞吐量指标；React 是技术选型限制。",
+        "没有描述可靠性目标，指定技术框架不能等同于可靠性要求。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-010"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-011",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "“The system shall support at least 20 transactions per second.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Project/process requirement",
+        "Constraint",
+        "Quality requirement: performance"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "transactions/second 衡量吞吐量（throughput），是 Performance Quality Requirement。",
+      "option_explanations": [
+        "这里的重点是每秒事务数量的阈值，衡量质量中的吞吐能力。",
+        "每秒事务数是运行时指标，没有规定开发或交付流程。",
+        "没有指定技术方案，描述的是系统应达到的吞吐水平。",
+        "正确：至少 20 transactions/second 是性能中的吞吐量要求。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-011"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-012",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "“The system must be available 99.99% of the time.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Quality requirement: specific quality (availability)",
+        "Project/process requirement",
+        "Performance requirement (throughput)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "百分比衡量 Availability（可用性），是 Specific Quality Requirement；不是反应速度或吞吐量。",
+      "option_explanations": [
+        "在线时间比例描述可用性质量，没有要求新增某项功能。",
+        "正确：99.99% 可用时间衡量 Availability。",
+        "可用时间比例不是开发步骤或交付日期。",
+        "可用时间比例不等于每秒处理多少事务，不能判为吞吐量。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-012"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-013",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "“Stored credit card information shall not be accessible to unauthorized users.” This is primarily a:",
+      "options": [
+        "Constraint",
+        "Functional requirement",
+        "Quality requirement: specific quality (security)",
+        "Project/process requirement"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "这里规定系统必须具备 Security 属性，不是在指定具体技术工具或合规框架，所以属于 Specific Quality。",
+      "option_explanations": [
+        "没有指定工具、框架或实现方案，原解析按安全质量属性分类。",
+        "原题强调防止未授权访问这一安全属性，并非描述某个功能操作。",
+        "正确：未授权用户不能访问存储的信用卡信息体现 Security。",
+        "题干没有规定开发或交付过程，约束的是产品的安全属性。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-013"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-014",
+      "topic_id": "goals",
+      "type": "single",
+      "prompt": "Pooch Palace plans a new management app. Which statement is the BEST high-level business goal?",
+      "options": [
+        "Improve customer convenience and reduce reservation handling time.",
+        "Place a “Reserve Now” button in the upper-right corner.",
+        "Use SQL tables for dog accounts.",
+        "Implement the interface using React."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Goal 描述系统产生的价值或业务成果（WHY）。按钮、数据库、技术栈是具体设计或实现手段；好的 Goal 后续还应设定可衡量的 Success Criteria。",
+      "option_explanations": [
+        "正确：提高便利性、减少处理时间描述业务成果，后续可补充成功标准。",
+        "按钮位置是具体界面设计手段，不能替代业务价值目标。",
+        "SQL 表是实现方式，没有说明为何需要系统或期望业务成果。",
+        "React 是技术方案，未描述系统带来的业务价值。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-014"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-015",
+      "topic_id": "goals",
+      "type": "single",
+      "prompt": "A stakeholder says, “FixIt! must show a map of maintenance issues.” What is the MOST useful next question for identifying a goal?",
+      "options": [
+        "Which map color do you prefer?",
+        "Which coding framework should implement the map?",
+        "Can we build the map before collecting requirements?",
+        "Why do you need that map, and what operational problem should it solve?"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "通过连续问 WHY，从提出的解决方案回到根本问题与期望业务价值，才能找到 Goal，并考虑更好的备选方案。",
+      "option_explanations": [
+        "地图颜色细化了设计，没有追问原始运营问题。",
+        "框架选择提前进入实现，无法解释为什么需要地图。",
+        "先建地图会固化方案，仍未理解利益相关者希望解决的问题。",
+        "正确：追问 WHY 与运营问题，可从方案返回根本目标。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-015"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-016",
+      "topic_id": "scope-risk",
+      "type": "single",
+      "prompt": "FixIt! staff propose a small “shout-out” feature, but the schedule is tight. What is the BEST RE response?",
+      "options": [
+        "Immediately add it because a manager requested it.",
+        "Evaluate value, goal alignment, priorities, effort, schedule impact, and risks before deciding.",
+        "Reject all proposed changes without analysis.",
+        "Build it secretly and update the scope afterward."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "不能因“只是一点小功能”就扩展 Scope。应分析与 Goals 的一致性、投入产出、优先级、工期及风险，再决定是否接受或留到以后版本。",
+      "option_explanations": [
+        "管理者提出并不免除价值、工期、目标及风险分析。",
+        "正确：先评估目标、收益、优先级、投入及交付影响，再作范围决策。",
+        "拒绝所有变更省略了分析，也可能错过有价值且可接受的变更。",
+        "秘密扩展范围绕过了影响分析和范围决策。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-016"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-017",
+      "topic_id": "context",
+      "type": "single",
+      "prompt": "Which description of a context diagram matches Lecture 4?",
+      "options": [
+        "A detailed class diagram showing private software methods.",
+        "A timeline of weekly development milestones.",
+        "A central system circle, external entities as rectangles, and labeled directional flows.",
+        "A list of stakeholders ranked only by authority."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Context Diagram 用中心圆表示系统，矩形表示外部实体，带方向的箭头表示数据、控制或材料流。通常把系统作为黑盒，不画内部类结构。",
+      "option_explanations": [
+        "上下文图将系统视为黑盒，不展开私有方法或内部类。",
+        "每周里程碑时间线描述进度，不是系统与外部实体的交互。",
+        "正确：中心系统、外部实体与标注的有向流符合原解析的图形约定。",
+        "按权力排序的是利益相关者分析的一种信息，未表达上下文流。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-017"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-018",
+      "topic_id": "context",
+      "type": "single",
+      "prompt": "What is the difference between a system boundary and a context boundary?",
+      "options": [
+        "The system boundary separates the system from its context; the context boundary separates relevant context from irrelevant environment.",
+        "Both boundaries mark programming modules inside the system.",
+        "A context boundary separates database tables from application code.",
+        "The system boundary is always identical to the campus boundary."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "System Boundary 划分系统本身与周围环境；Context Boundary 划分与需求有关的环境和无关环境。两者概念不同。",
+      "option_explanations": [
+        "正确：前者区分系统与上下文，后者区分相关上下文与无关环境。",
+        "两种边界均非内部程序模块划分，关注系统及环境的范围。",
+        "数据库与应用代码的区分属于内部技术划分，不能定义 Context Boundary。",
+        "System Boundary 依系统范围确定，不能一概等同于校园地理边界。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-018"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-019",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "Which is the BEST and most complete definition of a stakeholder?",
+      "options": [
+        "Only those who pay for the system.",
+        "Only its daily end users.",
+        "Only those with authority to approve code changes.",
+        "Anyone who influences the requirements and/or is affected by the system."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Stakeholder 可能是用户、开发者、管理员、监管者、维护人员、客户等；不一定直接使用或购买系统。",
+      "option_explanations": [
+        "付费者只是部分利益相关者，受影响但不付费的人也可能属于其中。",
+        "日常用户不是全部范围，监管、维护等非直接用户也可能相关。",
+        "代码批准权不是必要条件，任何影响需求或受系统影响的人都可能相关。",
+        "正确：涵盖影响需求及受到系统影响两类关系。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-019"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-020",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "The APM team considers drivers and administrators but ignores accessibility services, parking officers, IT staff, and regulators. What is the MAIN problem?",
+      "options": [
+        "Only the customer should be considered.",
+        "Relevant stakeholders who affect or are affected by APM have been omitted.",
+        "Every stakeholder must be a software engineer.",
+        "There are too many end users."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "识别 Stakeholders 应从参考清单、业务/运行环境和 Goals 多方向寻找，尽早纳入受影响群体，而非只访问直接用户。",
+      "option_explanations": [
+        "只考虑客户会继续遗漏其他影响或受影响的群体。",
+        "正确：无障碍、执法、IT 和监管等相关群体被遗漏，信息范围不完整。",
+        "利益相关者不必是软件工程师，也可能是监管者或使用者。",
+        "问题不在用户太多，而在忽略了其他相关群体。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-020"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-021",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "Which set of information belongs in a stakeholder analysis/model?",
+      "options": [
+        "Motivation, authority, relationships, expertise, expectations, availability, and priority.",
+        "Only age, major, and personal hobbies.",
+        "Only the number of user interface pages.",
+        "Only software source files and compilation time."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Lecture 5 Slide 22 明确列出 Motivation、Authority、Relations、Level of Expertise、Expectations、Availability、Priority 等维度。",
+      "option_explanations": [
+        "正确：这些维度对应原解析列出的利益相关者分析信息。",
+        "仅有年龄、专业与爱好不能描述需求相关的动机、权力、期望等。",
+        "界面页数描述产品结构，不能替代对人的动机与关系分析。",
+        "源文件与编译时间是实现信息，未刻画利益相关者。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-021"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-022",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "A stakeholder model represents stakeholders as nodes, their relationships as edges, and concerns in speech bubbles. This is a:",
+      "options": [
+        "Context diagram",
+        "System architecture diagram",
+        "Rich picture",
+        "Burndown chart"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Rich Picture 的节点是 Stakeholders、边是他们之间的关系、旁边的对话框/思想泡泡写主要 Concerns。不要与 Context Diagram（中央系统+外部实体+数据流）混淆。",
+      "option_explanations": [
+        "Context Diagram 以系统、外部实体及流为中心，与题干中的人际关系和气泡不同。",
+        "架构图强调系统结构，题干节点代表利益相关者，边代表他们的关系。",
+        "正确：利益相关者节点、关系边、关注点气泡是原解析中的 Rich Picture。",
+        "燃尽图关注进度，而题干在表达利益相关者关系与关注点。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-022"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-023",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "Which option correctly describes important sources of requirements information?",
+      "options": [
+        "Only comments made by the project sponsor.",
+        "Stakeholders, documents, and existing systems; context, goals, and observations also influence requirements.",
+        "Only new software features found on competitors’ websites.",
+        "Only the developer’s personal assumptions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Lecture 6 Slides 7–12：Main sources 是 Stakeholders、Documents、Existing Systems；Context、Goals、Observations 也影响需求，非正式观察也可能很重要。",
+      "option_explanations": [
+        "只听项目赞助者会遗漏文档、既有系统及其他利益相关者的信息。",
+        "正确：包含主要来源，并承认上下文、目标与观察的影响。",
+        "竞品功能只是有限的信息，不能替代对实际利益相关者与问题环境的理解。",
+        "开发者假设需要确认，不能作为唯一信息来源。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-023"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-024",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "Which statement BEST describes requirements elicitation?",
+      "options": [
+        "Implementing every solution suggested by the customer.",
+        "Writing tests only after coding finishes.",
+        "Fixing defects detected in production.",
+        "Discovering system requirements and exploring the problem world, using multiple information sources."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Elicitation 是发现需求、探索问题世界，不能简单等同于问“What do you want?”或直接实现用户提出的方案。",
+      "option_explanations": [
+        "客户提出的是可能的解决方案，需求获取仍要探索背后的问题与需要。",
+        "编码后写测试不是探索问题世界并发现需求的定义。",
+        "生产缺陷修复不等同于需求获取。",
+        "正确：以多个信息源发现需求并探索问题世界。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-024"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-025",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "APM officers have difficulty describing their real workflow. Which elicitation practice is MOST appropriate to reveal tacit tasks and exceptions?",
+      "options": [
+        "Observe officers performing their work in context.",
+        "Assume every officer follows the same workflow.",
+        "Skip officers and interview only developers.",
+        "Wait until system deployment to learn the workflow."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Observe（工作情境观察）可以发现 Stakeholders 难以表达的隐性需求、非典型操作和异常情况。Lecture 6 还包含 Ask、Collaborate、Build and play、Analyze 等实践类别。",
+      "option_explanations": [
+        "正确：情境观察能发现难以言述的隐性任务和异常操作。",
+        "假设流程一致可能掩盖题干要发现的差异与异常。",
+        "只问开发者会失去工作人员真实工作情境中的信息。",
+        "等部署后再了解流程，会错过建设前发现需求的机会。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-025"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-026",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "Which is the BEST question for eliciting a measurable performance requirement for APM?",
+      "options": [
+        "Should APM be pretty?",
+        "Which programming language is most fashionable?",
+        "What maximum delay is acceptable for updating displayed parking availability during peak hours?",
+        "Can we postpone all discussion about performance until launch?"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Performance Elicitation 要追问可量化的速度、延迟、吞吐量等。选项 C 包含可测量的最大延迟与高峰场景。",
+      "option_explanations": [
+        "“漂亮”既不是性能维度，也没有可测量的阈值。",
+        "语言时尚程度是技术偏好，没有获取延迟或吞吐等性能需求。",
+        "正确：同时询问最大延迟与高峰场景，便于形成可测性能要求。",
+        "推迟讨论没有获取性能期望，也没有建立可测量目标。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-026"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-027",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "Which question is MOST directly aimed at identifying a technical CONSTRAINT on the APM solution?",
+      "options": [
+        "What would make the system enjoyable to use?",
+        "Must APM integrate with the existing myCommute system or use specified campus platforms?",
+        "How quickly should a map screen load?",
+        "How many users will need the “Find Parking” feature?"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "技术约束限制解决方案选择，例如必须集成现有系统或使用指定平台。加载速度是 Performance；使用便利是 Usability；功能使用人数是需求背景。",
+      "option_explanations": [
+        "愉悦易用关注 Usability，未限制必须采用的技术方案。",
+        "正确：必须集成既有系统或使用指定平台会限制解决方案选择。",
+        "加载时间关注 Performance，未规定实现技术。",
+        "功能使用人数提供需求背景，未直接指定技术方案限制。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-027"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-028",
+      "topic_id": "scope-risk",
+      "type": "single",
+      "prompt": "When can a team reasonably stop intensive elicitation and begin construction?",
+      "options": [
+        "Only when absolutely no requirement could ever change again.",
+        "Whenever one manager says “we are finished,” regardless of gaps.",
+        "Only after every feature proposed by any user has been implemented.",
+        "When new scenarios and gaps are rare, new features are mostly out of scope/low priority, and the remaining risk is acceptable."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Slides 44 指出需求发现永远不可能保证完全结束。目标是达到 good enough，让开发在 acceptable risk 下继续；观察重复、无新场景、无关键缺口等信号。",
+      "option_explanations": [
+        "需求可能继续变化，完全无变化的保证不是现实停止条件。",
+        "单个经理的宣告不能代替关键缺口与剩余风险判断。",
+        "需求获取不等于实施所有提议，也无需等所有功能完成才开始建设。",
+        "正确：新场景和关键缺口已很少且剩余风险可接受，支持进入建设。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-028"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-029",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "For FixIt!, what is the BEST way to elicit innovative requirements?",
+      "options": [
+        "Explore deeper stakeholder goals together, propose alternatives, future scenarios, and technology possibilities with pros/cons.",
+        "Copy the current manual workflow exactly, with no changes.",
+        "Let the development team impose ideas without stakeholder input.",
+        "Avoid discussing needs and focus only on existing screens."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Lecture 6 Slides 51–53：创新应与 Stakeholders 共建，挖掘 Goals，讨论替代方案、未来场景和技术可能性，覆盖 Functionality、Performance、Usability。",
+      "option_explanations": [
+        "正确：与利益相关者围绕目标共创，并比较替代方案、未来场景与技术利弊。",
+        "原样复制当前流程且排除变化，限制了发现更好解决方案的机会。",
+        "开发者单方强加创意，缺少利益相关者参与和目标探索。",
+        "只看已有界面会忽略需求、深层目标及未来场景。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-029"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-030",
+      "topic_id": "re-lifecycle",
+      "type": "single",
+      "prompt": "After collecting unstructured stakeholder notes for APM, what is the BEST next step?",
+      "options": [
+        "Treat all notes as confirmed final requirements.",
+        "Only record the features developers remember.",
+        "Analyze and organize requirements, document assumptions and exceptional cases, quantify critical attributes, and validate with stakeholders.",
+        "Delete conflicting comments without asking any follow-up questions."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Lecture 6 Slides 47–48：通过分析整理碎片信息，持续增量文档化，记录假设和异常流程、量化关键属性、统一术语；被记录的需求仍需要 Validation 和 Management。",
+      "option_explanations": [
+        "未经分析与验证的访谈笔记不能直接视为确认后的最终需求。",
+        "仅凭开发者记忆记录会遗漏假设、异常情况和关键属性。",
+        "正确：分析、整理、记录并量化，再与利益相关者验证，符合原解析。",
+        "直接删除冲突会失去信息，仍需后续澄清与分析。"
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-030"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    }
+  ]
+}

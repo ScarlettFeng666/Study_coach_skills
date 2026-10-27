@@ -1,0 +1,4 @@
+interface:
+  display_name: "考试学习教练"
+  short_description: "从考试范围和课件生成离线刷题、错题复习、限时模考与考前五分钟速通"
+  default_prompt: "请使用 $exam-study-coach，先轻快地介绍接下来的备考对话、要找好的资料和最后的刷题网页，再在同一聊天里逐步问我缺少的信息，按我的资料和可用时间生成可下载的 HTML。续学或最后 5 分钟时直接接续复习。"

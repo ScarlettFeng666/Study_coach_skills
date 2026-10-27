@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Study Coach · 离线学习包</title>
+<style>
+:root{--ink:#172d37;--muted:#61747c;--bg:#f4f6f3;--paper:#fff;--line:#dce4de;--green:#176d55;--pale:#e7f3eb;--amber:#92611c;--red:#a7423f;--shadow:0 12px 36px #213b2910;--radius:20px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}button,input,select,textarea{font:inherit}button,select,input[type=number]{min-height:42px}button{cursor:pointer;border:1px solid var(--line);background:white;color:var(--ink);border-radius:11px;padding:9px 16px;font-weight:650}button:hover{border-color:var(--green);background:#f3f9f5}button.primary{background:var(--green);color:white;border-color:var(--green)}button.primary:hover{background:#115640}button.danger{color:var(--red)}button:disabled{opacity:.45;cursor:not-allowed}a{color:var(--green)}:focus-visible{outline:3px solid #dfad4d;outline-offset:3px}h1,h2,h3,p{margin:0}h1{font-size:clamp(28px,4vw,46px);line-height:1.2;letter-spacing:-1px;margin:12px 0}h2{font-size:25px;line-height:1.4}h3{font-size:19px;line-height:1.5}p+p{margin-top:10px}.shell{max-width:1240px;margin:auto;padding:38px 28px 60px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2.5px;font-weight:800;color:var(--green)}.hero{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.hero-copy{max-width:780px}.subtitle{color:var(--muted);font-size:17px}.offline{white-space:nowrap;background:var(--pale);border:1px solid #cfe2d4;border-radius:100px;padding:7px 13px;font-size:13px;color:var(--green)}.toolbar,.row,.actions,.badges{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.toolbar{margin:24px 0 20px}.toolbar button{font-size:13px;min-height:36px;padding:7px 12px}.toolbar .spacer{flex:1}.notice{padding:13px 17px;border-radius:12px;border:1px solid #e4d6b5;background:#fffbf0;color:#735a2d;font-size:13px;white-space:pre-wrap;margin:15px 0}.storage-error{border-color:#e8b8b5;background:#fff2f0;color:#923e36}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.metric{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:17px 20px}.metric strong{display:block;font-size:27px;line-height:1.2;margin-bottom:5px}.metric span{font-size:12px;color:var(--muted)}nav{display:flex;gap:5px;margin:27px 0 22px;border-bottom:1px solid var(--line);overflow:auto;padding-bottom:10px}nav button{border:0;background:transparent;white-space:nowrap;color:var(--muted);padding:10px 18px}nav button[aria-current=page]{color:var(--green);background:var(--pale)}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:var(--shadow);margin-bottom:18px}.card.soft{box-shadow:none;background:#edf3ee}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:23px}.section-head p{color:var(--muted);font-size:14px;margin-top:6px}.muted{color:var(--muted)}.small{font-size:13px}.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:100px;background:#eef1ed;color:var(--muted);font-size:12px;font-weight:650}.badge.good{background:var(--pale);color:var(--green)}.badge.bad{background:#fae9e7;color:var(--red)}.badge.warn{background:#fff1d8;color:var(--amber)}.question-layout{display:grid;grid-template-columns:minmax(0,1fr) 238px;gap:20px}.q-prompt{font-size:20px;line-height:1.65;font-weight:650;white-space:pre-wrap;margin:23px 0}.options{display:grid;gap:11px;margin:20px 0}.option{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);border-radius:12px;padding:15px;cursor:pointer;white-space:pre-wrap}.option:has(input:checked){border-color:var(--green);background:#edf7f0}.option.correct{border-color:#78b28d;background:#f0f8f2}.option.wrong{border-color:#d69891;background:#fff2ef}.option input{width:18px;height:18px;flex:none;accent-color:var(--green);margin:5px 0 0}.option span{overflow-wrap:anywhere}.option.disabled{cursor:default}.answer-area{display:block;width:100%;min-height:160px;border:1px solid var(--line);border-radius:12px;padding:14px;resize:vertical;background:#fff;color:var(--ink)}.answer-area:disabled{background:#f6f7f4;color:#4a5a60}.explanation{border-left:4px solid var(--green);background:#f0f6f1;padding:18px 20px;margin:22px 0;border-radius:0 12px 12px 0}.explanation p,.prewrap{white-space:pre-wrap;overflow-wrap:anywhere}.explanation ul{padding-left:20px}.option-analysis{padding:8px 0;border-bottom:1px solid #d9e5dc;font-size:14px;white-space:pre-wrap}.sources{font-size:12px;color:var(--muted);margin-top:16px}.qnav{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:16px}.qnav button{padding:6px;min-width:35px;min-height:37px;font-size:13px}.qnav button.current{box-shadow:inset 0 0 0 2px var(--green)}.qnav button.done{background:var(--pale);color:var(--green)}.qnav button.missed{background:#fbece9;color:var(--red)}.qnav button.filled{background:#eef0fc;color:#535e90}.divider{height:1px;background:var(--line);margin:22px 0}.between{justify-content:space-between}.empty{text-align:center;padding:48px 24px;color:var(--muted)}.empty h3{color:var(--ink);margin-bottom:8px}select,input[type=number]{border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink);padding:7px 11px;max-width:100%}.field{display:grid;gap:6px;font-size:14px}.field input[type=number]{width:120px}.timer{font:800 29px/1.2 ui-monospace,monospace;color:var(--green);font-variant-numeric:tabular-nums}.timer.urgent{color:var(--red)}.progress-track{height:7px;background:#e9eee9;border-radius:5px;overflow:hidden;margin-top:12px}.progress-fill{height:100%;background:var(--green);width:0}.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.topic-grid .card{margin:0}.topic-stat{font-size:13px;color:var(--muted);margin:11px 0}.priority{font-size:12px;color:var(--green);font-weight:750;text-transform:uppercase;letter-spacing:1px}.recall{background:#f6f8f4;border-radius:10px;padding:12px 15px;margin-top:13px}.trap{color:var(--amber);font-size:14px;margin-top:12px}.mistake-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:21px 0;border-top:1px solid var(--line)}.mistake-row:first-of-type{border-top:0}.mistake-row h3{font-size:16px}.history-row{padding:14px 0;border-top:1px solid var(--line)}.report-table{width:100%;border-collapse:collapse;font-size:14px}.report-table th,.report-table td{text-align:left;padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:top}.table-scroll{overflow:auto}.live-message{min-height:24px;color:var(--green);font-size:13px}.footer{margin-top:32px;color:var(--muted);font-size:12px}.error{color:var(--red)}.visually-hidden{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}.print-only{display:none}ul{padding-left:22px}details summary{cursor:pointer;font-weight:650}.source-item{padding:15px 0;border-top:1px solid var(--line)}.five-sheet .card{break-inside:avoid}.five-title{display:flex;justify-content:space-between;gap:10px}.five-sheet .summary{margin:11px 0;font-size:15px}.loading{padding:50px;text-align:center}
+@media(max-width:800px){.shell{padding:24px 17px 42px}.hero{display:block}.offline{display:inline-block;margin-bottom:14px}.metrics{grid-template-columns:repeat(2,1fr);gap:10px}.metric{padding:15px}.question-layout{grid-template-columns:1fr}.question-layout>aside{order:2}.qnav{grid-template-columns:repeat(8,1fr)}.card{padding:20px}.topic-grid{grid-template-columns:1fr}.section-head{flex-wrap:wrap}nav button{padding:9px 13px}.q-prompt{font-size:18px}.toolbar .spacer{display:none}.mistake-row{grid-template-columns:1fr}.report-table{min-width:570px}.hero-copy{max-width:100%}}
+@media(max-width:420px){.qnav{grid-template-columns:repeat(6,1fr)}.actions>button{flex:1}.metric strong{font-size:24px}}
+@media print{body{background:white;font-size:11pt}.shell{padding:0;max-width:none}.hero,.toolbar,.metrics,nav,.footer,#storage-warning,#live-message,.no-print{display:none!important}.card{box-shadow:none;border:1px solid #ddd;border-radius:4px;padding:14px;margin:12px 0}.print-only{display:block}.topic-grid{display:block}.topic-grid .card{margin:12px 0}.five-sheet .card{break-inside:avoid}.notice{font-size:10pt}.section-head{margin-bottom:12px}h2{font-size:18pt}h3{font-size:14pt}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="hero"><div class="hero-copy"><div class="eyebrow">STUDY COACH / 离线学习空间</div><h1 id="pack-title">学习包加载中</h1><p id="pack-subtitle" class="subtitle"></p></div><div class="offline">● 离线可用 · 进度保存在本机</div></header>
+  <div id="pack-notice" class="notice" hidden></div>
+  <div id="storage-warning" class="notice storage-error" role="alert" hidden></div>
+  <div class="toolbar no-print"><button id="export-progress">备份进度 JSON</button><button id="import-progress">恢复进度</button><input id="import-file" type="file" accept="application/json,.json" hidden><button id="export-report">学习报告 .md</button><button id="export-report-json">学习报告 .json</button><button id="print-sheet">打印当前页</button><span class="spacer"></span><button id="reset-progress" class="danger">重置本题包</button></div>
+  <div id="metrics" class="metrics" aria-label="学习概览"></div>
+  <nav id="main-nav" aria-label="学习模式"></nav>
+  <p id="live-message" class="live-message no-print" role="status" aria-live="polite"></p>
+  <main id="main"><div class="loading">正在准备学习内容…</div></main>
+  <footer class="footer">每次核对答案才记录一次作答；简答题由你自评，单独统计。建议学习结束后备份进度，浏览器清理数据或更换文件位置可能丢失本机记录。<br>学习结果只反映此题包中已作答的内容，不能保证真实考试成绩。</footer>
+</div>
+<script type="application/json" id="study-data">__STUDY_PACK_JSON__</script>
+<script>
+(() => {
+'use strict';
+const $ = id => document.getElementById(id);
+const el = (tag, text, cls) => { const n = document.createElement(tag); if (text !== undefined && text !== null) n.textContent = String(text); if (cls) n.className = cls; return n; };
+const button = (label, action, cls) => { const n = el('button', label, cls); n.type = 'button'; n.addEventListener('click', action); return n; };
+const badge = (text, cls = '') => el('span', text, 'badge ' + cls);
+const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+const setField = (o, key, value) => Object.defineProperty(o, key, {value, writable:true, enumerable:true, configurable:true});
+const obj = o => o !== null && typeof o === 'object' && !Array.isArray(o);
+const fail = message => { throw new Error(message); };
+const requireThat = (condition, message) => { if (!condition) fail(message); };
+const finite = n => typeof n === 'number' && Number.isFinite(n);
+const uid = () => 's_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 11);
+const stamp = n => new Date(n).toLocaleString();
+const stableString = value => Array.isArray(value) ? '[' + value.map(stableString).join(',') + ']' : obj(value) ? '{' + Object.keys(value).sort().map(k => JSON.stringify(k) + ':' + stableString(value[k])).join(',') + '}' : JSON.stringify(value);
+function fingerprint(value) { const s = stableString(value); let a = 2166136261, b = 5381; for (let i = 0; i < s.length; i++) { a = Math.imul(a ^ s.charCodeAt(i), 16777619); b = Math.imul(b, 33) ^ s.charCodeAt(i); } return (a >>> 0).toString(16).padStart(8, '0') + (b >>> 0).toString(16).padStart(8, '0') + '-' + s.length; }
+let pack;
+try { pack = JSON.parse($('study-data').textContent); validatePack(pack); }
+catch (err) { $('pack-title').textContent = '学习包无法加载'; $('main').replaceChildren(el('div', '题包数据不完整或格式不正确：' + err.message, 'card error')); return; }
+function validatePack(p) {
+  requireThat(obj(p) && p.schema_version === 1 && typeof p.pack_id === 'string' && p.pack_id.length > 0, '需要 schema_version: 1 与 pack_id');
+  for (const k of ['title', 'subtitle', 'language', 'notice']) requireThat(typeof p[k] === 'string', k + ' 必须是文本');
+  requireThat(obj(p.plan) && finite(p.plan.mock_minutes) && p.plan.mock_minutes >= 0 && finite(p.plan.total_minutes), '学习时间格式错误');
+  requireThat(Array.isArray(p.sources) && Array.isArray(p.topics) && p.topics.length > 0 && Array.isArray(p.questions), '缺少资料或主题');
+  requireThat(!p.questions.some(q => q.pool !== 'practice') || p.plan.mock_minutes > 0, '模考题池需要正数时限');
+  for (const field of ['sources', 'topics', 'questions']) { const ids = p[field].map(x => x.id); requireThat(ids.every(x => typeof x === 'string' && x.length > 0) && new Set(ids).size === ids.length, field + ' 的 ID 必须唯一'); }
+  const ts = new Set(p.topics.map(x => x.id)), ss = new Set(p.sources.map(x => x.id));
+  for (const s of p.sources) requireThat(['verified', 'unverified', 'general'].includes(s.status) && typeof s.label === 'string' && typeof s.detail === 'string', '资料格式错误');
+  for (const t of p.topics) requireThat(['title', 'summary', 'recall_prompt', 'quick_tip'].every(k => typeof t[k] === 'string') && Array.isArray(t.pitfalls) && t.pitfalls.every(x => typeof x === 'string') && Array.isArray(t.source_ids) && t.source_ids.every(id => ss.has(id)), '主题格式错误');
+  for (const q of p.questions) {
+    requireThat(ts.has(q.topic_id) && ['single', 'multiple', 'short'].includes(q.type) && ['practice', 'mock', 'both'].includes(q.pool), '题目类型、主题或题池错误');
+    requireThat(['prompt', 'explanation', 'reference_answer'].every(k => typeof q[k] === 'string') && ['options', 'answer', 'option_explanations', 'rubric', 'source_ids'].every(k => Array.isArray(q[k])), '题目字段错误');
+    requireThat(q.options.every(x => typeof x === 'string') && q.option_explanations.every(x => typeof x === 'string') && q.rubric.every(x => typeof x === 'string') && q.source_ids.every(id => ss.has(id)), '选项或来源错误');
+    requireThat(finite(q.estimated_seconds) && q.estimated_seconds > 0 && ['easy', 'medium', 'hard'].includes(q.difficulty) && ['adapted', 'generated', 'provided'].includes(q.origin), '题目时长、难度或来源类型错误');
+    if (q.type === 'short') requireThat(q.answer.length === 0 && q.options.length === 0 && q.option_explanations.length === 0 && q.rubric.length > 0, '简答题需要评分要点');
+    else requireThat(q.options.length >= 2 && q.option_explanations.length === q.options.length && q.answer.length >= 1 && (q.type !== 'single' || q.answer.length === 1) && new Set(q.answer).size === q.answer.length && q.answer.every(i => Number.isInteger(i) && i >= 0 && i < q.options.length), '选择题答案错误');
+  }
+}
+const qmap = new Map(pack.questions.map(q => [q.id, q]));
+const tmap = new Map(pack.topics.map(t => [t.id, t]));
+const smap = new Map(pack.sources.map(s => [s.id, s]));
+const fp = fingerprint(pack);
+const storageKey = 'study-coach:v1:' + encodeURIComponent(pack.pack_id) + ':' + fp;
+const practiceIds = pack.questions.filter(q => q.pool !== 'mock').map(q => q.id);
+const mockIds = pack.questions.filter(q => q.pool !== 'practice').map(q => q.id);
+const views = [['practice', '01 练习'], ['mistakes', '02 错题本'], ['mock', '03 限时模考'], ['weakness', '04 薄弱点'], ['five', '05 考前 5 分钟'], ['sources', '06 资料与计划']];
+const emptyAnswer = q => q.type === 'short' ? '' : [];
+const newEntry = qid => ({answer:emptyAnswer(qmap.get(qid)), attemptId:uid(), submitted:false});
+const newProgress = () => ({version:1, attempts:[], practice:{sessionId:uid(), index:0, filter:'all', questionIds:practiceIds.slice(), entries:Object.create(null)}, mocks:[], view:pack.questions.length?'practice':'five'});
+let state = newProgress();
+let storageFailed = false;
+let timerId;
+let lastTimerAnnouncement = -1;
+function storageWarning(message) { storageFailed = true; $('storage-warning').hidden = false; $('storage-warning').textContent = message + ' 当前页面仍可学习，请使用“备份进度 JSON”保存；关闭页面前务必备份。'; }
+function save() { try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (err) { storageWarning('浏览器未能保存进度（存储被禁用或空间不足）。'); } }
+function answerValid(q, a) { return q.type === 'short' ? typeof a === 'string' && a.length <= 50000 : Array.isArray(a) && a.length <= q.options.length && new Set(a).size === a.length && a.every(i => Number.isInteger(i) && i >= 0 && i < q.options.length) && (q.type !== 'single' || a.length <= 1); }
+const answered = (q, answer) => q.type === 'short' ? answer.trim().length > 0 : answer.length > 0;
+const scoreChoice = (q, answer) => answer.length === q.answer.length && q.answer.every(i => answer.includes(i));
+function exactKeys(value, keys, context) { requireThat(obj(value) && Object.keys(value).length === keys.length && keys.every(k => own(value, k)), context + ' 字段不匹配'); }
+function validateProgress(s) {
+  exactKeys(s, ['version', 'attempts', 'practice', 'mocks', 'view'], '进度');
+  requireThat(s.version === 1 && Array.isArray(s.attempts) && s.attempts.length <= 100000 && Array.isArray(s.mocks) && s.mocks.length <= 5000 && views.some(v => v[0] === s.view), '进度版本或数量错误');
+  const aids = new Set(), mids = new Set();
+  for (const a of s.attempts) {
+    exactKeys(a, ['id', 'qid', 'mode', 'sessionId', 'submittedAt', 'answer', 'correct', 'selfGraded'], '作答记录');
+    const q = qmap.get(a.qid);
+    requireThat(q && typeof a.id === 'string' && a.id.length > 0 && a.id.length <= 200 && !aids.has(a.id) && typeof a.sessionId === 'string' && a.sessionId.length > 0 && a.sessionId.length <= 200 && ['practice', 'review', 'mock'].includes(a.mode) && finite(a.submittedAt) && a.submittedAt > 0 && answerValid(q, a.answer) && typeof a.selfGraded === 'boolean', '作答记录无效');
+    aids.add(a.id);
+    if (q.type !== 'short') requireThat(a.selfGraded === false && a.correct === scoreChoice(q, a.answer), '客观题成绩与答案不一致');
+    else requireThat(a.selfGraded ? typeof a.correct === 'boolean' && answered(q, a.answer) : a.correct === (answered(q, a.answer) ? null : false), '简答题自评状态无效');
+  }
+  let activeCount = 0;
+  for (const m of s.mocks) {
+    exactKeys(m, ['id', 'status', 'questionIds', 'startedAt', 'deadline', 'submittedAt', 'index', 'answers'], '模考');
+    requireThat(typeof m.id === 'string' && m.id.length > 0 && m.id.length <= 200 && !mids.has(m.id) && ['active', 'submitted'].includes(m.status) && Array.isArray(m.questionIds) && m.questionIds.length > 0 && m.questionIds.length <= mockIds.length && new Set(m.questionIds).size === m.questionIds.length && m.questionIds.every(id => mockIds.includes(id)) && Number.isInteger(m.index) && m.index >= 0 && m.index < m.questionIds.length && obj(m.answers) && finite(m.startedAt) && m.startedAt > 0 && finite(m.deadline) && Math.abs(m.deadline - m.startedAt - pack.plan.mock_minutes * 60000) < 1, '模考记录无效');
+    mids.add(m.id);
+    for (const id of Object.keys(m.answers)) requireThat(m.questionIds.includes(id) && answerValid(qmap.get(id), m.answers[id]), '模考作答无效');
+    if (m.status === 'active') { activeCount++; requireThat(m.submittedAt === null && !s.attempts.some(a => a.sessionId === m.id), '进行中的模考状态冲突'); }
+    else {
+      requireThat(finite(m.submittedAt) && m.submittedAt >= m.startedAt, '交卷时间无效');
+      for (let i = 0; i < m.questionIds.length; i++) { const id = m.questionIds[i], a = s.attempts.find(x => x.id === m.id + ':' + i); requireThat(a && a.qid === id && a.mode === 'mock' && a.sessionId === m.id && stableString(a.answer) === stableString(own(m.answers, id) ? m.answers[id] : emptyAnswer(qmap.get(id))), '模考与作答记录不一致'); }
+    }
+  }
+  requireThat(activeCount <= 1 && s.attempts.every(a => { if (a.mode !== 'mock') return true; const m=s.mocks.find(x=>x.id===a.sessionId); if(!m||m.status!=='submitted')return false; const i=m.questionIds.indexOf(a.qid); return i>=0&&a.id===m.id+':'+i&&a.submittedAt===m.submittedAt; }), '模考关联错误');
+  const p = s.practice;
+  exactKeys(p, ['sessionId', 'index', 'filter', 'questionIds', 'entries'], '练习');
+  requireThat(typeof p.sessionId === 'string' && p.sessionId.length > 0 && p.sessionId.length <= 200 && typeof p.filter === 'string' && (['all', 'unresolved'].includes(p.filter) || p.filter.startsWith('topic:') && tmap.has(p.filter.slice(6)) || p.filter.startsWith('q:') && qmap.has(p.filter.slice(2))) && Array.isArray(p.questionIds) && new Set(p.questionIds).size === p.questionIds.length && p.questionIds.every(id => qmap.has(id)) && Number.isInteger(p.index) && p.index >= 0 && (p.questionIds.length === 0 ? p.index === 0 : p.index < p.questionIds.length) && obj(p.entries), '练习状态无效');
+  for (const id of Object.keys(p.entries)) { const e = p.entries[id], q = qmap.get(id); exactKeys(e, ['answer', 'attemptId', 'submitted'], '练习草稿'); requireThat(q && answerValid(q, e.answer) && typeof e.attemptId === 'string' && e.attemptId.length > 0 && e.attemptId.length <= 200 && typeof e.submitted === 'boolean', '练习草稿错误'); if (e.submitted) { const a = s.attempts.find(x => x.id === e.attemptId); requireThat(a && a.qid === id && a.mode !== 'mock' && a.sessionId === p.sessionId && stableString(a.answer) === stableString(e.answer), '练习提交状态不一致'); } else requireThat(!aids.has(e.attemptId), '练习重复提交'); }
+  return s;
+}
+try { const saved = localStorage.getItem(storageKey); if (saved) state = validateProgress(JSON.parse(saved)); } catch (err) { storageWarning('现有进度无法读取或校验失败；页面使用新的临时进度。原存储在首次操作前不会被覆盖。'); }
+function announce(message) { $('live-message').textContent = message; }
+const activeMock = () => state.mocks.find(m => m.status === 'active');
+function attemptFor(entry) { return state.attempts.find(a => a.id === entry.attemptId); }
+function mistakeMap() {
+  const result = new Map();
+  for (const a of state.attempts) {
+    if (a.correct === null) continue;
+    let m = result.get(a.qid);
+    if (a.correct === false) { if (!m) { m = {qid:a.qid, misses:0, streak:0, lastAt:0, selfGraded:false}; result.set(a.qid,m); } m.misses++; m.streak = 0; m.lastAt = a.submittedAt; m.selfGraded = a.selfGraded; }
+    else if (m) { m.streak = Math.min(2, m.streak + 1); m.lastAt = a.submittedAt; m.selfGraded = a.selfGraded; }
+  }
+  return result;
+}
+function topicStats() {
+  return pack.topics.map(topic => {
+    const qs = pack.questions.filter(q => q.topic_id === topic.id), records = state.attempts.filter(a => qmap.get(a.qid).topic_id === topic.id);
+    const objective = records.filter(a => qmap.get(a.qid).type !== 'short'), latest = new Map(); objective.forEach(a => latest.set(a.qid,a));
+    const self = records.filter(a => a.selfGraded), selfLatest = new Map(); self.forEach(a => selfLatest.set(a.qid,a));
+    const misses = objective.filter(a => a.correct === false).length, latestMisses = [...latest.values()].filter(a => !a.correct).length;
+    return {topic, total:qs.length, objectiveTotal:qs.filter(q => q.type !== 'short').length, attempts:objective.length, misses, tested:latest.size, latestMisses, selfAttempts:self.length, selfMisses:self.filter(a => !a.correct).length, selfTested:selfLatest.size, pending:records.filter(a => a.correct === null).length};
+  });
+}
+function metrics() {
+  const unique = new Map(); state.attempts.filter(a => qmap.get(a.qid).type !== 'short').forEach(a => unique.set(a.qid,a));
+  const right = [...unique.values()].filter(a => a.correct).length, mm = mistakeMap(), unresolved = [...mm.values()].filter(m => m.streak < 2).length;
+  $('metrics').replaceChildren(...[[unique.size + ' / ' + pack.questions.filter(q => q.type !== 'short').length,'已测客观题 · 按最近一次'],[unique.size ? Math.round(right/unique.size*100) + '%' : '—','最近客观题正确率 · 唯一题目'],[unresolved + ' / ' + mm.size,'待巩固 / 历史错题'],[pack.plan.total_minutes + ' min','计划学习时间 · 可自行调整节奏']].map(([value,label]) => { const n = el('div',null,'metric'); n.append(el('strong',value),el('span',label)); return n; }));
+}
+function switchView(view) {
+  const m = activeMock();
+  if (m && view !== 'mock') { if (!confirm('模考尚未结束。离开将按当前答案立即交卷，空题计错，并保留本场记录。确定离开？')) return; submitMock(m, false); }
+  state.view = view; save(); render();
+}
+function render() {
+  const m = activeMock(); if (m) state.view = 'mock';
+  $('main-nav').replaceChildren(...views.map(([id,label]) => { const n = button(label,() => switchView(id)); if (state.view === id) n.setAttribute('aria-current','page'); if (!pack.questions.length && (id==='practice'||id==='mock')) n.disabled=true; return n; }));
+  $('export-report').disabled = !!m; $('export-report-json').disabled = !!m; $('print-sheet').disabled = !!m;
+  metrics();
+  const main = $('main'); main.replaceChildren();
+  ({practice:renderPractice,mistakes:renderMistakes,mock:renderMock,weakness:renderWeakness,five:renderFive,sources:renderSources}[state.view])(main);
+  updateTimer();
+}
+function section(title, description) { const c = el('section',null,'card'), h = el('div',null,'section-head'), copy = el('div'); copy.append(el('h2',title)); if(description) copy.append(el('p',description)); h.append(copy); c.append(h); return {card:c,head:h}; }
+function sourceLine(q) {
+  const origin = {adapted:'依资料改编',generated:'生成练习',provided:'用户提供原题'}[q.origin];
+  const refs = q.source_ids.map(id => { const s = smap.get(id); return s.label + (s.status === 'unverified' ? '（未核验）' : s.status === 'general' ? '（通用知识）' : ''); });
+  return el('p',origin + ' · 来源：' + (refs.join('；') || '未标注具体出处'), 'sources');
+}
+function questionMeta(q, index, total) { const n = el('div',null,'badges'); n.append(badge('QUESTION ' + (index+1) + ' / ' + total),badge({single:'单选',multiple:'多选 · 全部选对才得分',short:'简答 · 自评'}[q.type]),badge({easy:'基础',medium:'进阶',hard:'挑战'}[q.difficulty])); return n; }
+function answerInputs(q, answer, locked, onChange, reveal) {
+  if (q.type === 'short') { const label = el('label',null,'field'); label.append(el('span','你的答案')); const input = el('textarea',null,'answer-area'); input.value = answer; input.maxLength = 50000; input.disabled = locked; input.placeholder = '先凭记忆作答，再查看参考答案和评分要点。'; input.addEventListener('input',()=>onChange(input.value)); label.append(input); return label; }
+  const list = el('div',null,'options'); list.setAttribute('role','group'); list.setAttribute('aria-label','答案选项');
+  q.options.forEach((text,i) => { const label = el('label',null,'option' + (locked ? ' disabled' : '')); if (reveal && q.answer.includes(i)) label.classList.add('correct'); if (reveal && answer.includes(i) && !q.answer.includes(i)) label.classList.add('wrong'); const input = el('input'); input.type = q.type === 'single' ? 'radio' : 'checkbox'; input.name = 'answer-' + q.id; input.value = String(i); input.checked = answer.includes(i); input.disabled = locked; input.addEventListener('change',()=>{ const value = q.type === 'single' ? [i] : input.checked ? [...answer.filter(x=>x!==i),i].sort((a,b)=>a-b) : answer.filter(x=>x!==i); answer = value; onChange(value); }); label.append(input,el('span',String.fromCharCode(65+i) + '. ' + text)); if (reveal && q.answer.includes(i)) label.append(el('span','✓','visually-hidden')); list.append(label); }); return list;
+}
+function explanation(q, attempt, onSelfGrade) {
+  const box = el('div',null,'explanation');
+  box.append(el('h3',attempt.correct === null ? '对照要点后自评' : attempt.correct ? '本次回答正确' : '本次仍需巩固'));
+  if(q.type === 'short') {
+    box.append(badge(attempt.selfGraded ? '学生自评 · 不计客观分' : answered(q,attempt.answer) ? '等待学生自评 · 不计客观分' : '未作答 · 计入错题，不计客观分','warn'),el('p',q.reference_answer));
+    const ul = el('ul'); q.rubric.forEach(point=>ul.append(el('li',point))); box.append(ul);
+    if(attempt.correct === null) { const actions=el('div',null,'actions'); actions.append(button('自评：掌握了',()=>onSelfGrade(true),'primary'),button('自评：还没掌握',()=>onSelfGrade(false))); box.append(actions); }
+  } else {
+    box.append(el('p','正确答案：' + q.answer.map(i=>String.fromCharCode(65+i)).join('、')));
+    q.option_explanations.forEach((text,i)=>box.append(el('div',String.fromCharCode(65+i) + ' · ' + text,'option-analysis')));
+  }
+  box.append(el('p',q.explanation),sourceLine(q)); return box;
+}
+function selfGrade(attempt, correct) { if(attempt.correct !== null) return; attempt.correct = correct; attempt.selfGraded = true; save(); render(); announce('已记录学生自评；客观题正确率不受影响。'); }
+function setPracticeFilter(filter) {
+  const p=state.practice, mistakes=mistakeMap(); p.filter=filter; p.index=0;
+  p.questionIds=filter==='all' ? practiceIds.slice() : filter==='unresolved' ? [...mistakes.values()].filter(m=>m.streak<2).map(m=>m.qid) : filter.startsWith('topic:') ? practiceIds.filter(id=>qmap.get(id).topic_id===filter.slice(6)) : [filter.slice(2)]; save(); render();
+}
+function renderPractice(main) {
+  const p=state.practice, intro=section('把知识变成能答对的题','先独立作答，再核对解析。重新作答需要点击“再练一次”，刷新或重复核对不会新增记录。');
+  const selectLabel=el('label',null,'field'); selectLabel.append(el('span','练习范围')); const select=el('select');
+  const options=[['all','全部练习题'],['unresolved','待巩固错题'],...pack.topics.map(t=>['topic:'+t.id,t.title])]; if(p.filter.startsWith('q:')) options.push([p.filter,'单题重练']); options.forEach(([v,l])=>{ const n=el('option',l); n.value=v; select.append(n); }); select.value=p.filter; select.addEventListener('change',()=>setPracticeFilter(select.value)); selectLabel.append(select); intro.head.append(selectLabel); main.append(intro.card);
+  if(!p.questionIds.length) { intro.card.append(empty('这里暂时没有题目',p.filter==='unresolved'?'历史错题需要连续答对两次才会标记为已巩固。':'可以切换练习范围，或进入限时模考。')); return; }
+  const id=p.questionIds[p.index], q=qmap.get(id); if(!own(p.entries,id)) setField(p.entries,id,newEntry(id)); const entry=p.entries[id], attempt=entry.submitted?attemptFor(entry):null;
+  const layout=el('div',null,'question-layout'), content=el('section',null,'card'), aside=el('aside',null,'card'); content.append(questionMeta(q,p.index,p.questionIds.length),el('p',q.prompt,'q-prompt'));
+  content.append(answerInputs(q,entry.answer,entry.submitted,value=>{entry.answer=value; save();},entry.submitted));
+  const actions=el('div',null,'actions');
+  if(!entry.submitted) actions.append(button('核对答案',()=>{
+    if(!answered(q,entry.answer)) {announce('请先作答，再核对答案。'); return;}
+    if(entry.submitted || state.attempts.some(a=>a.id===entry.attemptId)) return;
+    state.attempts.push({id:entry.attemptId,qid:id,mode:p.filter==='unresolved'||p.filter.startsWith('q:')?'review':'practice',sessionId:p.sessionId,submittedAt:Date.now(),answer:structuredAnswer(entry.answer),correct:q.type==='short'?null:scoreChoice(q,entry.answer),selfGraded:false}); entry.submitted=true; save(); render(); announce(q.type==='short'?'请依据评分要点自评本次答案。':'已记录本次作答。');
+  },'primary'));
+  else if(attempt.correct!==null) actions.append(button('再练一次',()=>{setField(p.entries,id,newEntry(id)); save(); render(); announce('新一轮作答已开始，上一轮记录已保留。');}));
+  content.append(actions); if(attempt) content.append(explanation(q,attempt,correct=>selfGrade(attempt,correct))); else content.append(el('p','本题建议用时约 ' + Math.ceil(q.estimated_seconds/60) + ' 分钟。','sources'));
+  const nav=el('div',null,'row between'); const prev=button('← 上一题',()=>{p.index--;save();render();}),next=button('下一题 →',()=>{p.index++;save();render();}); prev.disabled=p.index===0;next.disabled=p.index===p.questionIds.length-1;nav.append(prev,next);content.append(el('div',null,'divider'),nav);
+  aside.append(el('h3','题目导航'),el('p','绿：最近答对 · 红：最近答错','small muted'));const grid=el('div',null,'qnav'); p.questionIds.forEach((qid,i)=>{const e=own(p.entries,qid)?p.entries[qid]:null,a=e&&e.submitted?attemptFor(e):null;const n=button(i+1,()=>{p.index=i;save();render();},(i===p.index?'current ':'')+(a?(a.correct===false?'missed':a.correct===true?'done':'filled'):''));n.setAttribute('aria-label','第 '+(i+1)+' 题'+(i===p.index?'，当前题':''));if(i===p.index)n.setAttribute('aria-current','step');grid.append(n);});aside.append(grid);layout.append(content,aside);main.append(layout);
+}
+const structuredAnswer = answer => Array.isArray(answer) ? answer.slice().sort((a,b)=>a-b) : answer;
+function empty(title, description) { const n=el('div',null,'empty');n.append(el('h3',title),el('p',description));return n; }
+function renderMistakes(main) {
+  const list=[...mistakeMap().values()].sort((a,b)=>(a.streak>=2)-(b.streak>=2)||b.lastAt-a.lastAt), intro=section('错题不是终点，是复习清单','历史记录始终保留。每道错题在出错后连续两次答对，才会标记“已巩固”；再次答错会重新计数。简答题自评单独标注。');main.append(intro.card);
+  if(!list.length){intro.card.append(empty('还没有历史错题','完成练习或模考后，答错的题会自动进入这里。'));return;}
+  for(const m of list){const q=qmap.get(m.qid),row=el('div',null,'mistake-row'),copy=el('div'),meta=el('div',null,'badges');meta.append(badge(m.streak>=2?'已巩固':'待巩固',m.streak>=2?'good':'bad'),badge('连续答对 '+m.streak+'/2'),badge('历史出错 '+m.misses+' 次'));if(q.type==='short')meta.append(badge('简答自评 / 空题','warn'));copy.append(meta,el('h3',q.prompt),el('p',tmap.get(q.topic_id).title+' · 最近记录 '+stamp(m.lastAt),'small muted'));const actions=el('div',null,'actions');actions.append(button('重练这道题',()=>{setField(state.practice.entries,m.qid,newEntry(m.qid));state.view='practice';setPracticeFilter('q:'+m.qid);},'primary'));row.append(copy,actions);intro.card.append(row);}
+}
+function shuffle(values){const a=values.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function startMock(count){if(activeMock())return;const now=Date.now(),m={id:uid(),status:'active',questionIds:shuffle(mockIds).slice(0,count),startedAt:now,deadline:now+pack.plan.mock_minutes*60000,submittedAt:null,index:0,answers:Object.create(null)};state.mocks.push(m);state.view='mock';save();render();announce('模考已开始。截止时间固定，刷新页面不会重新计时。');}
+function submitMock(m,expired){if(m.status!=='active')return;m.status='submitted';m.submittedAt=expired?m.deadline:Date.now();m.questionIds.forEach((id,i)=>{const q=qmap.get(id),answer=own(m.answers,id)?m.answers[id]:emptyAnswer(q),aid=m.id+':'+i;if(!state.attempts.some(a=>a.id===aid))state.attempts.push({id:aid,qid:id,mode:'mock',sessionId:m.id,submittedAt:m.submittedAt,answer:structuredAnswer(answer),correct:q.type==='short'?(answered(q,answer)?null:false):scoreChoice(q,answer),selfGraded:false});});save();announce(expired?'时间到，已自动交卷。空题计错；非空简答题等待自评。':'已交卷并保存本场记录。');}
+function mockScore(m){const records=state.attempts.filter(a=>a.sessionId===m.id&&a.mode==='mock');return{records,objective:records.filter(a=>qmap.get(a.qid).type!=='short'),short:records.filter(a=>qmap.get(a.qid).type==='short')};}
+function renderMock(main){
+  const active=activeMock();if(active){renderActiveMock(main,active);return;}
+  const intro=section('用一次限时练习，检查真正的掌握','题目从模考题池随机抽取，同场不重复。交卷前隐藏答案、解析和来源提示；离开模考会确认并交卷。');main.append(intro.card);
+  if(mockIds.length){const row=el('div',null,'row'),label=el('label',null,'field'),count=el('input');count.type='number';count.min='1';count.max=String(mockIds.length);count.step='1';count.value=String(mockIds.length);label.append(el('span','本场题数（题池 '+mockIds.length+' 题）'),count);row.append(label,badge('时限 '+pack.plan.mock_minutes+' 分钟','good'),button('开始限时模考',()=>{const value=Number(count.value);if(!Number.isInteger(value)||value<1||value>mockIds.length){announce('请输入 1 到 '+mockIds.length+' 之间的整数。');count.focus();return;}startMock(value);},'primary'));intro.card.append(row,el('p','简答题交卷后对照评分要点自评，结果单列；客观分只统计单选和多选，空选计错。','small muted'));}else intro.card.append(empty('没有模考题','此学习包的题目均属于练习题池。'));
+  const completed=state.mocks.filter(m=>m.status==='submitted').slice().reverse();if(!completed.length)return;
+  const history=section('模考记录','所有已交卷场次均保留。点击查看可逐题复盘，并完成待评简答题。');main.append(history.card);
+  completed.forEach(m=>{const score=mockScore(m),right=score.objective.filter(a=>a.correct).length,pending=score.short.filter(a=>a.correct===null).length,row=el('div',null,'history-row');const top=el('div',null,'row between');top.append(el('strong',stamp(m.startedAt)),badge(score.objective.length?'客观题 '+right+'/'+score.objective.length+' · '+Math.round(right/score.objective.length*100)+'%':'全部为简答题','good'),button('查看本场复盘',()=>renderMockReview(main,m)));row.append(top,el('p',m.questionIds.length+' 题 · '+(pending?'待自评 '+pending+' 题':'已完成评分')+' · 交卷 '+stamp(m.submittedAt),'small muted'));history.card.append(row);});
+}
+function renderActiveMock(main,m){
+  const intro=section('限时模考进行中','作答可以修改。截止时间固定，刷新或关闭后重新打开会继续计时；超时会自动交卷。');main.append(intro.card);const stats=el('div',null,'row between'),time=el('div');time.append(el('div','剩余时间','small muted'));const timer=el('div','—','timer');timer.id='mock-timer';timer.setAttribute('role','timer');timer.setAttribute('aria-label','模考剩余时间');time.append(timer);const done=m.questionIds.filter(id=>own(m.answers,id)&&answered(qmap.get(id),m.answers[id])).length;stats.append(time,badge('已作答 '+done+' / '+m.questionIds.length),button('交卷',()=>{const blanks=m.questionIds.length-m.questionIds.filter(id=>own(m.answers,id)&&answered(qmap.get(id),m.answers[id])).length;if(confirm('确定交卷？'+(blanks?'还有 '+blanks+' 道空题，空题计错。':'')+'交卷后不能修改本场答案。')){submitMock(m,false);render();}},'primary'));intro.card.append(stats);const track=el('div',null,'progress-track'),fill=el('div',null,'progress-fill');fill.style.width=done/m.questionIds.length*100+'%';track.append(fill);intro.card.append(track);
+  const q=qmap.get(m.questionIds[m.index]),answer=own(m.answers,q.id)?m.answers[q.id]:emptyAnswer(q),layout=el('div',null,'question-layout'),content=el('section',null,'card'),aside=el('aside',null,'card');content.append(questionMeta(q,m.index,m.questionIds.length),el('p',q.prompt,'q-prompt'),answerInputs(q,answer,false,value=>{if(m.status!=='active'||Date.now()>=m.deadline){submitMock(m,true);render();return;}setField(m.answers,q.id,value);save();updateMockNavigation(m);},false));const nav=el('div',null,'row between'),prev=button('← 上一题',()=>{m.index--;save();render();}),next=button('下一题 →',()=>{m.index++;save();render();});prev.disabled=m.index===0;next.disabled=m.index===m.questionIds.length-1;nav.append(prev,next);content.append(el('div',null,'divider'),nav);aside.append(el('h3','模考导航'),el('p','蓝色：已填写 · 仍可修改','small muted'));const grid=el('div',null,'qnav');grid.id='mock-navigation';aside.append(grid);layout.append(content,aside);main.append(layout);updateMockNavigation(m);
+}
+function updateMockNavigation(m){const grid=$('mock-navigation');if(!grid)return;grid.replaceChildren(...m.questionIds.map((id,i)=>{const filled=own(m.answers,id)&&answered(qmap.get(id),m.answers[id]),b=button(i+1,()=>{m.index=i;save();render();},(i===m.index?'current ':'')+(filled?'filled':''));b.setAttribute('aria-label','第 '+(i+1)+' 题，'+(filled?'已填写':'未填写'));if(i===m.index)b.setAttribute('aria-current','step');return b;}));const filled=m.questionIds.filter(id=>own(m.answers,id)&&answered(qmap.get(id),m.answers[id])).length;const progress=$('main').querySelector('.progress-fill');if(progress)progress.style.width=filled/m.questionIds.length*100+'%';const badges=$('main').querySelectorAll('.section-head + .row .badge');if(badges[0])badges[0].textContent='已作答 '+filled+' / '+m.questionIds.length;}
+function updateTimer(){const m=activeMock();if(!m)return;if(Date.now()>=m.deadline){submitMock(m,true);render();return;}const n=$('mock-timer');if(n){const secs=Math.ceil((m.deadline-Date.now())/1000);n.textContent=String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0');n.classList.toggle('urgent',secs<=60);const minute=Math.ceil(secs/60);if(secs<=60&&minute!==lastTimerAnnouncement){lastTimerAnnouncement=minute;announce('模考剩余不足 1 分钟。');}}}
+function renderMockReview(main,m){
+  main.replaceChildren();const score=mockScore(m),right=score.objective.filter(a=>a.correct).length,intro=section('本场复盘',stamp(m.startedAt)+' · '+m.questionIds.length+' 题');intro.head.append(button('返回模考记录',()=>render()));intro.card.append(el('h3',score.objective.length?'客观题 '+right+' / '+score.objective.length+'（'+Math.round(right/score.objective.length*100)+'%）':'本场无客观题，简答题自评单列'),el('p','简答题：自评掌握 '+score.short.filter(a=>a.correct===true).length+'，自评未掌握 '+score.short.filter(a=>a.selfGraded&&!a.correct).length+'，未作答 '+score.short.filter(a=>a.correct===false&&!a.selfGraded).length+'，待自评 '+score.short.filter(a=>a.correct===null).length,'small muted'));main.append(intro.card);
+  m.questionIds.forEach((id,i)=>{const q=qmap.get(id),attempt=score.records.find(a=>a.qid===id),card=el('section',null,'card');card.append(questionMeta(q,i,m.questionIds.length),el('p',q.prompt,'q-prompt'),answerInputs(q,attempt.answer,true,()=>{},true),explanation(q,attempt,correct=>{if(attempt.correct!==null)return;attempt.correct=correct;attempt.selfGraded=true;save();metrics();renderMockReview(main,m);announce('已记录简答题学生自评。');}));main.append(card);});
+}
+function renderWeakness(main){
+  const intro=section('先看证据，再安排复习','客观题覆盖与最近正确率按“唯一题目最近一次作答”计算；失误排序使用全部客观作答的“答错次数 / 作答次数”。自评简答单列，未测不等于掌握。');main.append(intro.card);
+  const stats=topicStats().sort((a,b)=>(b.attempts?b.misses/b.attempts:-1)-(a.attempts?a.misses/a.attempts:-1)||b.misses-a.misses),table=el('table',null,'report-table'),thead=el('thead'),tr=el('tr');['知识点','客观题覆盖','最近正确','历史失误 / 作答','简答自评 / 待评'].forEach(x=>tr.append(el('th',x)));thead.append(tr);table.append(thead);const body=el('tbody');stats.forEach(s=>{const row=el('tr');row.append(el('td',s.topic.title),el('td',s.tested+'/'+s.objectiveTotal+(s.tested===0?' · 未测':'')),el('td',s.tested?s.tested-s.latestMisses+' / '+s.tested:'—'),el('td',s.misses+' / '+s.attempts+(s.attempts?'（'+Math.round(s.misses/s.attempts*100)+'%）':'')),el('td','已自评 '+s.selfTested+' 题；失误 '+s.selfMisses+'/'+s.selfAttempts+' 次；待评 '+s.pending));body.append(row);});table.append(body);const wrap=el('div',null,'table-scroll');wrap.append(table);intro.card.append(wrap);
+  const grid=el('div',null,'topic-grid'),mm=mistakeMap();stats.forEach(s=>{const c=el('article',null,'card'),count=[...mm.values()].filter(m=>m.streak<2&&qmap.get(m.qid).topic_id===s.topic.id).length;c.append(badge(count?'待巩固 '+count+' 题':s.tested?'已测':'客观题未测',count?'bad':s.tested?'good':'warn'),el('h3',s.topic.title),el('p',s.topic.summary,'small prewrap'),el('div','主动回忆：'+s.topic.recall_prompt,'recall'));grid.append(c);});main.append(grid);
+}
+function truncate(text,max){return text.length<=max?text:text.slice(0,max-1)+'…';}
+function fiveTopics(){const mm=mistakeMap(),stats=topicStats(),rank=stats.map((s,index)=>{const unresolved=[...mm.values()].filter(m=>m.streak<2&&qmap.get(m.qid).topic_id===s.topic.id).length;return{...s,unresolved,index};}).sort((a,b)=>b.unresolved-a.unresolved||(b.attempts?b.misses/b.attempts:-1)-(a.attempts?a.misses/a.attempts:-1)||a.index-b.index);return rank.slice(0,6);}
+function renderFive(main){const intro=section('考前 5 分钟，把重点再过一遍','先回忆，再看提示。优先覆盖待巩固错题，再看历史失误与其他核心主题。最多 6 个主题、约 1,300 个中文字符；这是一份快速回顾，不代表完整考试范围。');intro.head.append(button('导出这份速通清单',()=>download('five-minute-'+safeName(pack.pack_id)+'.md',fiveMarkdown(),'text/markdown;charset=utf-8')));main.append(intro.card);const sheet=el('div',null,'five-sheet');fiveTopics().forEach((s,i)=>{const t=s.topic,c=el('article',null,'card'),head=el('div',null,'five-title');head.append(el('div',(i+1)+'. '+truncate(t.title,30),'priority'),badge(s.unresolved?'待巩固 '+s.unresolved+' 题':s.tested?'客观题已测':'客观题未测',s.unresolved?'bad':s.tested?'good':'warn'));c.append(head,el('p',truncate(t.quick_tip||t.summary,80),'summary'),el('div','闭眼回忆：'+truncate(t.recall_prompt,50),'recall'),el('p','容易踩坑：'+truncate(t.pitfalls[0]||'留意题干条件、范围与例外。',35),'trap'));sheet.append(c);});main.append(sheet);}
+function renderSources(main){const intro=section('学习范围、来源与用时','题目依据当前提供的资料生成或改编。未核验的出处不能当作已经证实的课程要求；资料中若有互相冲突的内容，需要向授课方确认。');main.append(intro.card);intro.card.append(el('p',pack.notice||'请以授课教师发布的考试范围和评分要求为准。','prewrap'));const plan=el('div',null,'row');[['练习',pack.plan.practice_minutes],['模考',pack.plan.mock_minutes],['复盘',pack.plan.review_minutes]].forEach(([label,n])=>plan.append(badge(label+' '+n+' 分钟','good')));intro.card.append(plan,el('p',pack.plan.rationale,'small prewrap'));pack.sources.forEach(s=>{const row=el('div',null,'source-item');row.append(badge({verified:'已核对资料',unverified:'未核验',general:'通用知识'}[s.status],s.status==='verified'?'good':'warn'),el('h3',s.label),el('p',s.detail,'small prewrap'));intro.card.append(row);});intro.card.append(el('p','题包 ID：'+pack.pack_id+' · 内容指纹：'+fp,'small muted'));}
+function safeName(value){return value.replace(/[^a-zA-Z0-9_-]/g,'_').slice(0,70)||'study-pack';}
+function download(name,text,type){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function fiveMarkdown(){const lines=['# '+pack.title+' · 考前 5 分钟','',pack.notice,'','最多 6 个主题；优先待巩固错题。未测主题不代表已掌握。',''];fiveTopics().forEach((s,i)=>{lines.push('## '+(i+1)+'. '+truncate(s.topic.title,30)+'（'+(s.unresolved?'待巩固 '+s.unresolved+' 题':s.tested?'客观题已测':'客观题未测')+'）','',truncate(s.topic.quick_tip||s.topic.summary,80),'','- 主动回忆：'+truncate(s.topic.recall_prompt,50),'- 易错：'+truncate(s.topic.pitfalls[0]||'留意题干条件、范围与例外。',35),'');});return lines.join('\n');}
+function learningReport(){
+  const stats=topicStats(),mm=[...mistakeMap().values()],lines=['# '+pack.title+' · 学习报告','', '导出时间：'+stamp(Date.now()),'题包：'+pack.pack_id+' / '+fp,'',pack.notice,'','客观覆盖按唯一题目最近一次计；失误比例按全部客观作答计。简答为学生自评，不纳入客观分。','未测内容无法据此判断掌握情况。以下答案为题包设定的参考答案，不自动代表已经教师或原课件核验；请结合逐题来源状态判断。','','## 知识点诊断',''];
+  stats.forEach(s=>lines.push('- '+s.topic.title+'：客观覆盖 '+s.tested+'/'+s.objectiveTotal+'；最近正确 '+(s.tested-s.latestMisses)+'/'+s.tested+'；历史失误 '+s.misses+'/'+s.attempts+' 次；简答自评失误 '+s.selfMisses+'/'+s.selfAttempts+' 次；待评 '+s.pending+' 次。'));
+  lines.push('','## 历史错题','');if(!mm.length)lines.push('暂无历史错题。');mm.forEach(m=>{const q=qmap.get(m.qid);lines.push('- ['+(m.streak>=2?'已巩固':'待巩固')+'] '+q.id+' · '+q.prompt.replace(/\n/g,' ')+'；历史失误 '+m.misses+' 次；连续答对 '+m.streak+'/2'+(q.type==='short'?'；含学生自评 / 空题':''));});
+  lines.push('','## 全部作答记录','');
+  state.attempts.forEach(a=>{
+    const q=qmap.get(a.qid),answer=q.type==='short'?a.answer:a.answer.map(i=>String.fromCharCode(65+i)+'. '+q.options[i]).join('；');
+    lines.push('### '+a.qid+' · '+stamp(a.submittedAt),'','考点：'+tmap.get(q.topic_id).title,'模式：'+a.mode+'；结果：'+(a.correct===null?'待自评':a.correct?'正确':'错误')+(a.selfGraded?'（学生自评，不计客观分）':''),'','题目：'+q.prompt,'');
+    if(q.type!=='short'){q.options.forEach((text,i)=>lines.push('- '+String.fromCharCode(65+i)+'. '+text));lines.push('','正确答案（题包设定）：'+q.answer.map(i=>String.fromCharCode(65+i)+'. '+q.options[i]).join('；'));}
+    else{lines.push('参考答案（题包设定）：'+q.reference_answer,'','评分要点：');q.rubric.forEach(point=>lines.push('- '+point));}
+    lines.push('','学生作答：'+(answer||'未作答'),'','原题包解析：'+q.explanation);
+    if(q.type!=='short')q.option_explanations.forEach((text,i)=>lines.push('- '+String.fromCharCode(65+i)+' 选项解析：'+text));
+    lines.push('','题目来源类型：'+{adapted:'依资料改编',generated:'生成练习',provided:'用户提供原题'}[q.origin]);
+    if(!q.source_ids.length)lines.push('未标注具体出处。');
+    q.source_ids.forEach(id=>{const s=smap.get(id);lines.push('- '+s.label+' ['+{verified:'已核对资料',unverified:'未核验',general:'通用知识'}[s.status]+']：'+s.detail);});
+    lines.push('');
+  });
+  lines.push('',fiveMarkdown());return lines.join('\n');
+}
+function backup(){return{format:'exam-study-progress',version:1,pack_id:pack.pack_id,fingerprint:fp,exported_at:new Date().toISOString(),progress:state};}
+function reportJSON(){const attempted=new Set(state.attempts.map(a=>a.qid));return{format:'exam-study-report',version:1,pack_id:pack.pack_id,fingerprint:fp,exported_at:new Date().toISOString(),title:pack.title,notice:pack.notice,answer_caveat:'答案为题包设定，不自动代表已经教师或原课件核验，请结合来源状态判断。',sources:pack.sources,coverage_definition:'客观覆盖按唯一题目最近一次；失误比例按全部客观作答。学生自评单列，未测不能判断掌握。',topics:topicStats(),questions:pack.questions.filter(q=>attempted.has(q.id)),mistakes:[...mistakeMap().values()].map(m=>({...m,resolved:m.streak>=2,question:qmap.get(m.qid).prompt})),attempts:state.attempts,mocks:state.mocks,five_minute:fiveMarkdown()};}
+function mergeProgress(incoming){
+  const current=JSON.parse(JSON.stringify(state)),byAttempt=new Map(current.attempts.map(a=>[a.id,a]));
+  for(const a of incoming.attempts){const previous=byAttempt.get(a.id);if(!previous){current.attempts.push(a);byAttempt.set(a.id,a);continue;}const left={...previous,correct:null,selfGraded:false},right={...a,correct:null,selfGraded:false};requireThat(stableString(left)===stableString(right),'备份中存在同 ID 但内容不同的作答');if(previous.correct===null&&a.selfGraded){Object.assign(previous,a);}else if(a.correct!==null&&previous.correct!==null)requireThat(previous.correct===a.correct&&previous.selfGraded===a.selfGraded,'备份自评结果与现有记录冲突');}
+  current.attempts.sort((a,b)=>a.submittedAt-b.submittedAt);
+  const byMock=new Map(current.mocks.map(m=>[m.id,m]));for(const m of incoming.mocks){const previous=byMock.get(m.id);if(!previous){current.mocks.push(m);byMock.set(m.id,m);}else if(previous.status==='active'&&m.status==='submitted'){Object.assign(previous,m);}else if(previous.status===m.status){requireThat(stableString(previous)===stableString(m),'备份与现有模考记录冲突');}}
+  current.practice=incoming.practice;current.view=current.mocks.some(m=>m.status==='active')?'mock':incoming.view;return validateProgress(current);
+}
+async function importFile(file){
+  if(!file)return;try{requireThat(file.size<=20*1024*1024,'备份文件超过 20 MB');const incoming=JSON.parse(await file.text());exactKeys(incoming,['format','version','pack_id','fingerprint','exported_at','progress'],'备份');requireThat(incoming.format==='exam-study-progress'&&incoming.version===1&&incoming.pack_id===pack.pack_id&&incoming.fingerprint===fp,'这份备份不属于当前题包或当前内容版本，无法恢复');requireThat(typeof incoming.exported_at==='string'&&Number.isFinite(Date.parse(incoming.exported_at)),'导出时间格式错误');validateProgress(incoming.progress);if(!confirm('恢复将合并作答与错题历史，并采用备份中的练习草稿。'+(activeMock()?'当前模考会先交卷并保留。':'')+'确定继续？'))return;const m=activeMock();if(m)submitMock(m,false);const merged=mergeProgress(incoming.progress);state=merged;save();render();announce('已合并备份进度，现有作答历史已保留。');}catch(err){announce('恢复失败：'+err.message);}}
+$('pack-title').textContent=pack.title;$('pack-subtitle').textContent=pack.subtitle;document.title=pack.title+' · Study Coach';
+const unverified=pack.sources.some(s=>s.status==='unverified');if(pack.notice||unverified){$('pack-notice').hidden=false;$('pack-notice').textContent=(pack.notice||'')+(unverified?'\n资料提示：本题包包含未核验来源，相关题目与结论需要对照原课件确认。':'');}
+$('export-progress').addEventListener('click',()=>{download('study-progress-'+safeName(pack.pack_id)+'.json',JSON.stringify(backup(),null,2),'application/json');announce('进度备份已生成，包含作答、错题历史与模考截止时间。');});
+$('import-progress').addEventListener('click',()=>$('import-file').click());$('import-file').addEventListener('change',event=>{importFile(event.target.files[0]);event.target.value='';});
+$('export-report').addEventListener('click',()=>{if(activeMock())return;download('study-report-'+safeName(pack.pack_id)+'.md',learningReport(),'text/markdown;charset=utf-8');announce('已生成包含作答记录、薄弱点与速通清单的学习报告。');});
+$('export-report-json').addEventListener('click',()=>{if(activeMock())return;download('study-report-'+safeName(pack.pack_id)+'.json',JSON.stringify(reportJSON(),null,2),'application/json');announce('已生成结构化学习报告；恢复进度请使用“备份进度 JSON”。');});
+$('print-sheet').addEventListener('click',()=>{if(!activeMock())window.print();});
+$('reset-progress').addEventListener('click',()=>{if(!confirm('确定清空当前题包、当前内容版本的全部作答、错题和模考历史？此操作不可撤销，其他题包不受影响。建议先备份。'))return;state=newProgress();try{localStorage.removeItem(storageKey);}catch(err){storageWarning('浏览器无法删除已存储的进度。');}save();render();announce('当前题包进度已重置。');});
+window.addEventListener('beforeunload',event=>{if(activeMock()){event.preventDefault();event.returnValue='';}});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateTimer();});
+window.addEventListener('focus',updateTimer);
+render();timerId=setInterval(updateTimer,1000);
+})();
+</script>
+</body>
+</html>
