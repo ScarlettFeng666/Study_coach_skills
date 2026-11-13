@@ -1,5 +1,7 @@
 # 考试学习教练 · exam-study-coach
 
+**中文** · **[English edition](https://github.com/ScarlettFeng666/Study_coach_skills/tree/main/exam-study-coach-en)** · **[Download the English skill package](https://github.com/ScarlettFeng666/Study_coach_skills/raw/refs/heads/main/downloads/exam-study-coach-en.zip)**
+
 备考小队，出发啦！📚 这是一套已经设计好的备考对话，会一步步带你从准备资料走到刷题复盘。
 
 **上传技能包并发送启动语后，就留在同一个聊天里，跟着 AI 的提问回答。** 它会依次了解：你准备什么考试、有哪些课件和例题，以及这次能学习多久，再制作一个可以下载的刷题网页。下载后用浏览器打开，就能练习、查看错题、进行模考，并复习薄弱点和考前 5 分钟重点。

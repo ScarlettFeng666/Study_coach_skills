@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Study Coach · Offline study pack</title>
+<style>
+:root{--ink:#172d37;--muted:#61747c;--bg:#f4f6f3;--paper:#fff;--line:#dce4de;--green:#176d55;--pale:#e7f3eb;--amber:#92611c;--red:#a7423f;--shadow:0 12px 36px #213b2910;--radius:20px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}button,input,select,textarea{font:inherit}button,select,input[type=number]{min-height:42px}button{cursor:pointer;border:1px solid var(--line);background:white;color:var(--ink);border-radius:11px;padding:9px 16px;font-weight:650}button:hover{border-color:var(--green);background:#f3f9f5}button.primary{background:var(--green);color:white;border-color:var(--green)}button.primary:hover{background:#115640}button.danger{color:var(--red)}button:disabled{opacity:.45;cursor:not-allowed}a{color:var(--green)}:focus-visible{outline:3px solid #dfad4d;outline-offset:3px}h1,h2,h3,p{margin:0}h1{font-size:clamp(28px,4vw,46px);line-height:1.2;letter-spacing:-1px;margin:12px 0}h2{font-size:25px;line-height:1.4}h3{font-size:19px;line-height:1.5}p+p{margin-top:10px}.shell{max-width:1240px;margin:auto;padding:38px 28px 60px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2.5px;font-weight:800;color:var(--green)}.hero{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.hero-copy{max-width:780px}.subtitle{color:var(--muted);font-size:17px}.offline{white-space:nowrap;background:var(--pale);border:1px solid #cfe2d4;border-radius:100px;padding:7px 13px;font-size:13px;color:var(--green)}.toolbar,.row,.actions,.badges{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.toolbar{margin:24px 0 20px}.toolbar button{font-size:13px;min-height:36px;padding:7px 12px}.toolbar .spacer{flex:1}.notice{padding:13px 17px;border-radius:12px;border:1px solid #e4d6b5;background:#fffbf0;color:#735a2d;font-size:13px;white-space:pre-wrap;margin:15px 0}.storage-error{border-color:#e8b8b5;background:#fff2f0;color:#923e36}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.metric{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:17px 20px}.metric strong{display:block;font-size:27px;line-height:1.2;margin-bottom:5px}.metric span{font-size:12px;color:var(--muted)}nav{display:flex;gap:5px;margin:27px 0 22px;border-bottom:1px solid var(--line);overflow:auto;padding-bottom:10px}nav button{border:0;background:transparent;white-space:nowrap;color:var(--muted);padding:10px 18px}nav button[aria-current=page]{color:var(--green);background:var(--pale)}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:var(--shadow);margin-bottom:18px}.card.soft{box-shadow:none;background:#edf3ee}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:23px}.section-head p{color:var(--muted);font-size:14px;margin-top:6px}.muted{color:var(--muted)}.small{font-size:13px}.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:100px;background:#eef1ed;color:var(--muted);font-size:12px;font-weight:650}.badge.good{background:var(--pale);color:var(--green)}.badge.bad{background:#fae9e7;color:var(--red)}.badge.warn{background:#fff1d8;color:var(--amber)}.question-layout{display:grid;grid-template-columns:minmax(0,1fr) 238px;gap:20px}.q-prompt{font-size:20px;line-height:1.65;font-weight:650;white-space:pre-wrap;margin:23px 0}.options{display:grid;gap:11px;margin:20px 0}.option{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);border-radius:12px;padding:15px;cursor:pointer;white-space:pre-wrap}.option:has(input:checked){border-color:var(--green);background:#edf7f0}.option.correct{border-color:#78b28d;background:#f0f8f2}.option.wrong{border-color:#d69891;background:#fff2ef}.option input{width:18px;height:18px;flex:none;accent-color:var(--green);margin:5px 0 0}.option span{overflow-wrap:anywhere}.option.disabled{cursor:default}.answer-area{display:block;width:100%;min-height:160px;border:1px solid var(--line);border-radius:12px;padding:14px;resize:vertical;background:#fff;color:var(--ink)}.answer-area:disabled{background:#f6f7f4;color:#4a5a60}.explanation{border-left:4px solid var(--green);background:#f0f6f1;padding:18px 20px;margin:22px 0;border-radius:0 12px 12px 0}.explanation p,.prewrap{white-space:pre-wrap;overflow-wrap:anywhere}.explanation ul{padding-left:20px}.option-analysis{padding:8px 0;border-bottom:1px solid #d9e5dc;font-size:14px;white-space:pre-wrap}.sources{font-size:12px;color:var(--muted);margin-top:16px}.qnav{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:16px}.qnav button{padding:6px;min-width:35px;min-height:37px;font-size:13px}.qnav button.current{box-shadow:inset 0 0 0 2px var(--green)}.qnav button.done{background:var(--pale);color:var(--green)}.qnav button.missed{background:#fbece9;color:var(--red)}.qnav button.filled{background:#eef0fc;color:#535e90}.divider{height:1px;background:var(--line);margin:22px 0}.between{justify-content:space-between}.empty{text-align:center;padding:48px 24px;color:var(--muted)}.empty h3{color:var(--ink);margin-bottom:8px}select,input[type=number]{border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink);padding:7px 11px;max-width:100%}.field{display:grid;gap:6px;font-size:14px}.field input[type=number]{width:120px}.timer{font:800 29px/1.2 ui-monospace,monospace;color:var(--green);font-variant-numeric:tabular-nums}.timer.urgent{color:var(--red)}.progress-track{height:7px;background:#e9eee9;border-radius:5px;overflow:hidden;margin-top:12px}.progress-fill{height:100%;background:var(--green);width:0}.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.topic-grid .card{margin:0}.topic-stat{font-size:13px;color:var(--muted);margin:11px 0}.priority{font-size:12px;color:var(--green);font-weight:750;text-transform:uppercase;letter-spacing:1px}.recall{background:#f6f8f4;border-radius:10px;padding:12px 15px;margin-top:13px}.trap{color:var(--amber);font-size:14px;margin-top:12px}.mistake-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:21px 0;border-top:1px solid var(--line)}.mistake-row:first-of-type{border-top:0}.mistake-row h3{font-size:16px}.history-row{padding:14px 0;border-top:1px solid var(--line)}.report-table{width:100%;border-collapse:collapse;font-size:14px}.report-table th,.report-table td{text-align:left;padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:top}.table-scroll{overflow:auto}.live-message{min-height:24px;color:var(--green);font-size:13px}.footer{margin-top:32px;color:var(--muted);font-size:12px}.error{color:var(--red)}.visually-hidden{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}.print-only{display:none}ul{padding-left:22px}details summary{cursor:pointer;font-weight:650}.source-item{padding:15px 0;border-top:1px solid var(--line)}.five-sheet .card{break-inside:avoid}.five-title{display:flex;justify-content:space-between;gap:10px}.five-sheet .summary{margin:11px 0;font-size:15px}.loading{padding:50px;text-align:center}
+@media(max-width:800px){.shell{padding:24px 17px 42px}.hero{display:block}.offline{display:inline-block;margin-bottom:14px}.metrics{grid-template-columns:repeat(2,1fr);gap:10px}.metric{padding:15px}.question-layout{grid-template-columns:1fr}.question-layout>aside{order:2}.qnav{grid-template-columns:repeat(8,1fr)}.card{padding:20px}.topic-grid{grid-template-columns:1fr}.section-head{flex-wrap:wrap}nav button{padding:9px 13px}.q-prompt{font-size:18px}.toolbar .spacer{display:none}.mistake-row{grid-template-columns:1fr}.report-table{min-width:570px}.hero-copy{max-width:100%}}
+@media(max-width:420px){.qnav{grid-template-columns:repeat(6,1fr)}.actions>button{flex:1}.metric strong{font-size:24px}}
+@media print{body{background:white;font-size:11pt}.shell{padding:0;max-width:none}.hero,.toolbar,.metrics,nav,.footer,#storage-warning,#live-message,.no-print{display:none!important}.card{box-shadow:none;border:1px solid #ddd;border-radius:4px;padding:14px;margin:12px 0}.print-only{display:block}.topic-grid{display:block}.topic-grid .card{margin:12px 0}.five-sheet .card{break-inside:avoid}.notice{font-size:10pt}.section-head{margin-bottom:12px}h2{font-size:18pt}h3{font-size:14pt}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="hero"><div class="hero-copy"><div class="eyebrow">STUDY COACH / OFFLINE STUDY SPACE</div><h1 id="pack-title">Loading study pack</h1><p id="pack-subtitle" class="subtitle"></p></div><div class="offline">● Works offline · Progress saved locally</div></header>
+  <div id="pack-notice" class="notice" hidden></div>
+  <div id="storage-warning" class="notice storage-error" role="alert" hidden></div>
+  <div class="toolbar no-print"><button id="export-progress">Back up progress JSON</button><button id="import-progress">Restore progress</button><input id="import-file" type="file" accept="application/json,.json" hidden><button id="export-report">Study report .md</button><button id="export-report-json">Study report .json</button><button id="print-sheet">Print current page</button><span class="spacer"></span><button id="reset-progress" class="danger">Reset this pack</button></div>
+  <div id="metrics" class="metrics" aria-label="Study overview"></div>
+  <nav id="main-nav" aria-label="Study modes"></nav>
+  <p id="live-message" class="live-message no-print" role="status" aria-live="polite"></p>
+  <main id="main"><div class="loading">Preparing study content…</div></main>
+  <footer class="footer">An attempt is recorded only when you check an answer. Short answers are self-assessed and counted separately. Back up after studying: clearing browser data or moving this file may make local records unavailable.<br>Results reflect only your answers in this pack and do not guarantee real exam scores.</footer>
+</div>
+<script type="application/json" id="study-data">__STUDY_PACK_JSON__</script>
+<script>
+(() => {
+'use strict';
+const $ = id => document.getElementById(id);
+const el = (tag, text, cls) => { const n = document.createElement(tag); if (text !== undefined && text !== null) n.textContent = String(text); if (cls) n.className = cls; return n; };
+const button = (label, action, cls) => { const n = el('button', label, cls); n.type = 'button'; n.addEventListener('click', action); return n; };
+const badge = (text, cls = '') => el('span', text, 'badge ' + cls);
+const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+const setField = (o, key, value) => Object.defineProperty(o, key, {value, writable:true, enumerable:true, configurable:true});
+const obj = o => o !== null && typeof o === 'object' && !Array.isArray(o);
+const fail = message => { throw new Error(message); };
+const requireThat = (condition, message) => { if (!condition) fail(message); };
+const finite = n => typeof n === 'number' && Number.isFinite(n);
+const uid = () => 's_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 11);
+const stamp = n => new Date(n).toLocaleString('en-US');
+const stableString = value => Array.isArray(value) ? '[' + value.map(stableString).join(',') + ']' : obj(value) ? '{' + Object.keys(value).sort().map(k => JSON.stringify(k) + ':' + stableString(value[k])).join(',') + '}' : JSON.stringify(value);
+function fingerprint(value) { const s = stableString(value); let a = 2166136261, b = 5381; for (let i = 0; i < s.length; i++) { a = Math.imul(a ^ s.charCodeAt(i), 16777619); b = Math.imul(b, 33) ^ s.charCodeAt(i); } return (a >>> 0).toString(16).padStart(8, '0') + (b >>> 0).toString(16).padStart(8, '0') + '-' + s.length; }
+let pack;
+try { pack = JSON.parse($('study-data').textContent); validatePack(pack); }
+catch (err) { $('pack-title').textContent = "Unable to load study pack"; $('main').replaceChildren(el('div', "Study-pack data is incomplete or invalid: " + err.message, 'card error')); return; }
+function validatePack(p) {
+  requireThat(obj(p) && p.schema_version === 1 && typeof p.pack_id === 'string' && p.pack_id.length > 0, "schema_version: 1 and pack_id are required");
+  for (const k of ['title', 'subtitle', 'language', 'notice']) requireThat(typeof p[k] === 'string', k + " must be text");
+  requireThat(obj(p.plan) && finite(p.plan.mock_minutes) && p.plan.mock_minutes >= 0 && finite(p.plan.total_minutes), "Invalid study-time format");
+  requireThat(Array.isArray(p.sources) && Array.isArray(p.topics) && p.topics.length > 0 && Array.isArray(p.questions), "Sources or topics are missing");
+  requireThat(!p.questions.some(q => q.pool !== 'practice') || p.plan.mock_minutes > 0, "The mock-exam pool requires a positive time limit");
+  for (const field of ['sources', 'topics', 'questions']) { const ids = p[field].map(x => x.id); requireThat(ids.every(x => typeof x === 'string' && x.length > 0) && new Set(ids).size === ids.length, field + " IDs must be unique"); }
+  const ts = new Set(p.topics.map(x => x.id)), ss = new Set(p.sources.map(x => x.id));
+  for (const s of p.sources) requireThat(['verified', 'unverified', 'general'].includes(s.status) && typeof s.label === 'string' && typeof s.detail === 'string', "Invalid source format");
+  for (const t of p.topics) requireThat(['title', 'summary', 'recall_prompt', 'quick_tip'].every(k => typeof t[k] === 'string') && Array.isArray(t.pitfalls) && t.pitfalls.every(x => typeof x === 'string') && Array.isArray(t.source_ids) && t.source_ids.every(id => ss.has(id)), "Invalid topic format");
+  for (const q of p.questions) {
+    requireThat(ts.has(q.topic_id) && ['single', 'multiple', 'short'].includes(q.type) && ['practice', 'mock', 'both'].includes(q.pool), "Invalid question type, topic, or pool");
+    requireThat(['prompt', 'explanation', 'reference_answer'].every(k => typeof q[k] === 'string') && ['options', 'answer', 'option_explanations', 'rubric', 'source_ids'].every(k => Array.isArray(q[k])), "Invalid question fields");
+    requireThat(q.options.every(x => typeof x === 'string') && q.option_explanations.every(x => typeof x === 'string') && q.rubric.every(x => typeof x === 'string') && q.source_ids.every(id => ss.has(id)), "Invalid options or sources");
+    requireThat(finite(q.estimated_seconds) && q.estimated_seconds > 0 && ['easy', 'medium', 'hard'].includes(q.difficulty) && ['adapted', 'generated', 'provided'].includes(q.origin), "Invalid question time, difficulty, or origin");
+    if (q.type === 'short') requireThat(q.answer.length === 0 && q.options.length === 0 && q.option_explanations.length === 0 && q.rubric.length > 0, "Short-answer questions require grading criteria");
+    else requireThat(q.options.length >= 2 && q.option_explanations.length === q.options.length && q.answer.length >= 1 && (q.type !== 'single' || q.answer.length === 1) && new Set(q.answer).size === q.answer.length && q.answer.every(i => Number.isInteger(i) && i >= 0 && i < q.options.length), "Invalid multiple-choice answer");
+  }
+}
+const qmap = new Map(pack.questions.map(q => [q.id, q]));
+const tmap = new Map(pack.topics.map(t => [t.id, t]));
+const smap = new Map(pack.sources.map(s => [s.id, s]));
+const fp = fingerprint(pack);
+const storageKey = 'study-coach:v1:' + encodeURIComponent(pack.pack_id) + ':' + fp;
+const practiceIds = pack.questions.filter(q => q.pool !== 'mock').map(q => q.id);
+const mockIds = pack.questions.filter(q => q.pool !== 'practice').map(q => q.id);
+const views = [['practice', "01 Practice"], ['mistakes', "02 Mistake notebook"], ['mock', "03 Timed mock exam"], ['weakness', "04 Weak areas"], ['five', "05 Final 5 minutes"], ['sources', "06 Sources & plan"]];
+const emptyAnswer = q => q.type === 'short' ? '' : [];
+const newEntry = qid => ({answer:emptyAnswer(qmap.get(qid)), attemptId:uid(), submitted:false});
+const newProgress = () => ({version:1, attempts:[], practice:{sessionId:uid(), index:0, filter:'all', questionIds:practiceIds.slice(), entries:Object.create(null)}, mocks:[], view:pack.questions.length?'practice':'five'});
+let state = newProgress();
+let storageFailed = false;
+let timerId;
+let lastTimerAnnouncement = -1;
+function storageWarning(message) { storageFailed = true; $('storage-warning').hidden = false; $('storage-warning').textContent = message + " You can keep studying here. Use “Back up progress JSON” to save your progress before closing this page."; }
+function save() { try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (err) { storageWarning("The browser could not save progress (storage is disabled or full)."); } }
+function answerValid(q, a) { return q.type === 'short' ? typeof a === 'string' && a.length <= 50000 : Array.isArray(a) && a.length <= q.options.length && new Set(a).size === a.length && a.every(i => Number.isInteger(i) && i >= 0 && i < q.options.length) && (q.type !== 'single' || a.length <= 1); }
+const answered = (q, answer) => q.type === 'short' ? answer.trim().length > 0 : answer.length > 0;
+const scoreChoice = (q, answer) => answer.length === q.answer.length && q.answer.every(i => answer.includes(i));
+function exactKeys(value, keys, context) { requireThat(obj(value) && Object.keys(value).length === keys.length && keys.every(k => own(value, k)), context + " fields do not match"); }
+function validateProgress(s) {
+  exactKeys(s, ['version', 'attempts', 'practice', 'mocks', 'view'], "Progress");
+  requireThat(s.version === 1 && Array.isArray(s.attempts) && s.attempts.length <= 100000 && Array.isArray(s.mocks) && s.mocks.length <= 5000 && views.some(v => v[0] === s.view), "Invalid progress version or record count");
+  const aids = new Set(), mids = new Set();
+  for (const a of s.attempts) {
+    exactKeys(a, ['id', 'qid', 'mode', 'sessionId', 'submittedAt', 'answer', 'correct', 'selfGraded'], "Attempt record");
+    const q = qmap.get(a.qid);
+    requireThat(q && typeof a.id === 'string' && a.id.length > 0 && a.id.length <= 200 && !aids.has(a.id) && typeof a.sessionId === 'string' && a.sessionId.length > 0 && a.sessionId.length <= 200 && ['practice', 'review', 'mock'].includes(a.mode) && finite(a.submittedAt) && a.submittedAt > 0 && answerValid(q, a.answer) && typeof a.selfGraded === 'boolean', "Invalid attempt record");
+    aids.add(a.id);
+    if (q.type !== 'short') requireThat(a.selfGraded === false && a.correct === scoreChoice(q, a.answer), "The objective score does not match the answer");
+    else requireThat(a.selfGraded ? typeof a.correct === 'boolean' && answered(q, a.answer) : a.correct === (answered(q, a.answer) ? null : false), "Invalid short-answer self-assessment state");
+  }
+  let activeCount = 0;
+  for (const m of s.mocks) {
+    exactKeys(m, ['id', 'status', 'questionIds', 'startedAt', 'deadline', 'submittedAt', 'index', 'answers'], "Mock exam");
+    requireThat(typeof m.id === 'string' && m.id.length > 0 && m.id.length <= 200 && !mids.has(m.id) && ['active', 'submitted'].includes(m.status) && Array.isArray(m.questionIds) && m.questionIds.length > 0 && m.questionIds.length <= mockIds.length && new Set(m.questionIds).size === m.questionIds.length && m.questionIds.every(id => mockIds.includes(id)) && Number.isInteger(m.index) && m.index >= 0 && m.index < m.questionIds.length && obj(m.answers) && finite(m.startedAt) && m.startedAt > 0 && finite(m.deadline) && Math.abs(m.deadline - m.startedAt - pack.plan.mock_minutes * 60000) < 1, "Invalid mock-exam record");
+    mids.add(m.id);
+    for (const id of Object.keys(m.answers)) requireThat(m.questionIds.includes(id) && answerValid(qmap.get(id), m.answers[id]), "Invalid mock-exam answer");
+    if (m.status === 'active') { activeCount++; requireThat(m.submittedAt === null && !s.attempts.some(a => a.sessionId === m.id), "Conflicting active mock-exam state"); }
+    else {
+      requireThat(finite(m.submittedAt) && m.submittedAt >= m.startedAt, "Invalid submission time");
+      for (let i = 0; i < m.questionIds.length; i++) { const id = m.questionIds[i], a = s.attempts.find(x => x.id === m.id + ':' + i); requireThat(a && a.qid === id && a.mode === 'mock' && a.sessionId === m.id && stableString(a.answer) === stableString(own(m.answers, id) ? m.answers[id] : emptyAnswer(qmap.get(id))), "Mock exam and attempt records do not match"); }
+    }
+  }
+  requireThat(activeCount <= 1 && s.attempts.every(a => { if (a.mode !== 'mock') return true; const m=s.mocks.find(x=>x.id===a.sessionId); if(!m||m.status!=='submitted')return false; const i=m.questionIds.indexOf(a.qid); return i>=0&&a.id===m.id+':'+i&&a.submittedAt===m.submittedAt; }), "Invalid mock-exam record links");
+  const p = s.practice;
+  exactKeys(p, ['sessionId', 'index', 'filter', 'questionIds', 'entries'], "Practice");
+  requireThat(typeof p.sessionId === 'string' && p.sessionId.length > 0 && p.sessionId.length <= 200 && typeof p.filter === 'string' && (['all', 'unresolved'].includes(p.filter) || p.filter.startsWith('topic:') && tmap.has(p.filter.slice(6)) || p.filter.startsWith('q:') && qmap.has(p.filter.slice(2))) && Array.isArray(p.questionIds) && new Set(p.questionIds).size === p.questionIds.length && p.questionIds.every(id => qmap.has(id)) && Number.isInteger(p.index) && p.index >= 0 && (p.questionIds.length === 0 ? p.index === 0 : p.index < p.questionIds.length) && obj(p.entries), "Invalid practice state");
+  for (const id of Object.keys(p.entries)) { const e = p.entries[id], q = qmap.get(id); exactKeys(e, ['answer', 'attemptId', 'submitted'], "Practice draft"); requireThat(q && answerValid(q, e.answer) && typeof e.attemptId === 'string' && e.attemptId.length > 0 && e.attemptId.length <= 200 && typeof e.submitted === 'boolean', "Invalid practice draft"); if (e.submitted) { const a = s.attempts.find(x => x.id === e.attemptId); requireThat(a && a.qid === id && a.mode !== 'mock' && a.sessionId === p.sessionId && stableString(a.answer) === stableString(e.answer), "Practice submission states do not match"); } else requireThat(!aids.has(e.attemptId), "Duplicate practice submission"); }
+  return s;
+}
+try { const saved = localStorage.getItem(storageKey); if (saved) state = validateProgress(JSON.parse(saved)); } catch (err) { storageWarning("Saved progress could not be read or validated. This page is using new temporary progress. Existing storage will remain unchanged until your first action."); }
+function announce(message) { $('live-message').textContent = message; }
+const activeMock = () => state.mocks.find(m => m.status === 'active');
+function attemptFor(entry) { return state.attempts.find(a => a.id === entry.attemptId); }
+function mistakeMap() {
+  const result = new Map();
+  for (const a of state.attempts) {
+    if (a.correct === null) continue;
+    let m = result.get(a.qid);
+    if (a.correct === false) { if (!m) { m = {qid:a.qid, misses:0, streak:0, lastAt:0, selfGraded:false}; result.set(a.qid,m); } m.misses++; m.streak = 0; m.lastAt = a.submittedAt; m.selfGraded = a.selfGraded; }
+    else if (m) { m.streak = Math.min(2, m.streak + 1); m.lastAt = a.submittedAt; m.selfGraded = a.selfGraded; }
+  }
+  return result;
+}
+function topicStats() {
+  return pack.topics.map(topic => {
+    const qs = pack.questions.filter(q => q.topic_id === topic.id), records = state.attempts.filter(a => qmap.get(a.qid).topic_id === topic.id);
+    const objective = records.filter(a => qmap.get(a.qid).type !== 'short'), latest = new Map(); objective.forEach(a => latest.set(a.qid,a));
+    const self = records.filter(a => a.selfGraded), selfLatest = new Map(); self.forEach(a => selfLatest.set(a.qid,a));
+    const misses = objective.filter(a => a.correct === false).length, latestMisses = [...latest.values()].filter(a => !a.correct).length;
+    return {topic, total:qs.length, objectiveTotal:qs.filter(q => q.type !== 'short').length, attempts:objective.length, misses, tested:latest.size, latestMisses, selfAttempts:self.length, selfMisses:self.filter(a => !a.correct).length, selfTested:selfLatest.size, pending:records.filter(a => a.correct === null).length};
+  });
+}
+function metrics() {
+  const unique = new Map(); state.attempts.filter(a => qmap.get(a.qid).type !== 'short').forEach(a => unique.set(a.qid,a));
+  const right = [...unique.values()].filter(a => a.correct).length, mm = mistakeMap(), unresolved = [...mm.values()].filter(m => m.streak < 2).length;
+  $('metrics').replaceChildren(...[[unique.size + ' / ' + pack.questions.filter(q => q.type !== 'short').length,"Objective questions attempted · latest answer"],[unique.size ? Math.round(right/unique.size*100) + '%' : '—',"Latest objective accuracy · unique questions"],[unresolved + ' / ' + mm.size,"Unresolved / all past mistakes"],[pack.plan.total_minutes + ' min',"Planned study time · work at your own pace"]].map(([value,label]) => { const n = el('div',null,'metric'); n.append(el('strong',value),el('span',label)); return n; }));
+}
+function switchView(view) {
+  const m = activeMock();
+  if (m && view !== 'mock') { if (!confirm("The mock exam is still active. Leaving will submit your current answers immediately, count blanks as incorrect, and retain this session. Leave now?")) return; submitMock(m, false); }
+  state.view = view; save(); render();
+}
+function render() {
+  const m = activeMock(); if (m) state.view = 'mock';
+  $('main-nav').replaceChildren(...views.map(([id,label]) => { const n = button(label,() => switchView(id)); if (state.view === id) n.setAttribute('aria-current','page'); if (!pack.questions.length && (id==='practice'||id==='mock')) n.disabled=true; return n; }));
+  $('export-report').disabled = !!m; $('export-report-json').disabled = !!m; $('print-sheet').disabled = !!m;
+  metrics();
+  const main = $('main'); main.replaceChildren();
+  ({practice:renderPractice,mistakes:renderMistakes,mock:renderMock,weakness:renderWeakness,five:renderFive,sources:renderSources}[state.view])(main);
+  updateTimer();
+}
+function section(title, description) { const c = el('section',null,'card'), h = el('div',null,'section-head'), copy = el('div'); copy.append(el('h2',title)); if(description) copy.append(el('p',description)); h.append(copy); c.append(h); return {card:c,head:h}; }
+function sourceLine(q) {
+  const origin = {adapted:"Adapted from materials",generated:"Generated practice",provided:"Original question provided by user"}[q.origin];
+  const refs = q.source_ids.map(id => { const s = smap.get(id); return s.label + (s.status === 'unverified' ? " (unverified)" : s.status === 'general' ? " (general knowledge)" : ''); });
+  return el('p',origin + " · Sources: " + (refs.join('; ') || "No specific source given"), 'sources');
+}
+function questionMeta(q, index, total) { const n = el('div',null,'badges'); n.append(badge('QUESTION ' + (index+1) + ' / ' + total),badge({single:"Single choice",multiple:"Select all that apply · all-or-nothing scoring",short:"Short answer · self-assessed"}[q.type]),badge({easy:"Easy",medium:"Medium",hard:"Hard"}[q.difficulty])); return n; }
+function answerInputs(q, answer, locked, onChange, reveal) {
+  if (q.type === 'short') { const label = el('label',null,'field'); label.append(el('span',"Your answer")); const input = el('textarea',null,'answer-area'); input.value = answer; input.maxLength = 50000; input.disabled = locked; input.placeholder = "Answer from memory first, then check the reference answer and grading criteria."; input.addEventListener('input',()=>onChange(input.value)); label.append(input); return label; }
+  const list = el('div',null,'options'); list.setAttribute('role','group'); list.setAttribute('aria-label',"Answer options");
+  q.options.forEach((text,i) => { const label = el('label',null,'option' + (locked ? ' disabled' : '')); if (reveal && q.answer.includes(i)) label.classList.add('correct'); if (reveal && answer.includes(i) && !q.answer.includes(i)) label.classList.add('wrong'); const input = el('input'); input.type = q.type === 'single' ? 'radio' : 'checkbox'; input.name = 'answer-' + q.id; input.value = String(i); input.checked = answer.includes(i); input.disabled = locked; input.addEventListener('change',()=>{ const value = q.type === 'single' ? [i] : input.checked ? [...answer.filter(x=>x!==i),i].sort((a,b)=>a-b) : answer.filter(x=>x!==i); answer = value; onChange(value); }); label.append(input,el('span',String.fromCharCode(65+i) + '. ' + text)); if (reveal && q.answer.includes(i)) label.append(el('span','✓','visually-hidden')); list.append(label); }); return list;
+}
+function explanation(q, attempt, onSelfGrade) {
+  const box = el('div',null,'explanation');
+  box.append(el('h3',attempt.correct === null ? "Check the criteria, then assess your answer" : attempt.correct ? "Correct this time" : "Needs more practice"));
+  if(q.type === 'short') {
+    box.append(badge(attempt.selfGraded ? "Student self-assessment · excluded from objective score" : answered(q,attempt.answer) ? "Awaiting student self-assessment · excluded from objective score" : "Unanswered · added to mistakes, excluded from objective score",'warn'),el('p',q.reference_answer));
+    const ul = el('ul'); q.rubric.forEach(point=>ul.append(el('li',point))); box.append(ul);
+    if(attempt.correct === null) { const actions=el('div',null,'actions'); actions.append(button("Self-assess: understood",()=>onSelfGrade(true),'primary'),button("Self-assess: needs work",()=>onSelfGrade(false))); box.append(actions); }
+  } else {
+    box.append(el('p',"Correct answer: " + q.answer.map(i=>String.fromCharCode(65+i)).join(', ')));
+    q.option_explanations.forEach((text,i)=>box.append(el('div',String.fromCharCode(65+i) + ' · ' + text,'option-analysis')));
+  }
+  box.append(el('p',q.explanation),sourceLine(q)); return box;
+}
+function selfGrade(attempt, correct) { if(attempt.correct !== null) return; attempt.correct = correct; attempt.selfGraded = true; save(); render(); announce("Self-assessment recorded; objective accuracy is unchanged."); }
+function setPracticeFilter(filter) {
+  const p=state.practice, mistakes=mistakeMap(); p.filter=filter; p.index=0;
+  p.questionIds=filter==='all' ? practiceIds.slice() : filter==='unresolved' ? [...mistakes.values()].filter(m=>m.streak<2).map(m=>m.qid) : filter.startsWith('topic:') ? practiceIds.filter(id=>qmap.get(id).topic_id===filter.slice(6)) : [filter.slice(2)]; save(); render();
+}
+function renderPractice(main) {
+  const p=state.practice, intro=section("Put your knowledge into practice","Answer independently, then check the explanation. Click “Try again” for a new attempt; refreshing or checking again will not add another record.");
+  const selectLabel=el('label',null,'field'); selectLabel.append(el('span',"Practice scope")); const select=el('select');
+  const options=[['all',"All practice questions"],['unresolved',"Unresolved mistakes"],...pack.topics.map(t=>['topic:'+t.id,t.title])]; if(p.filter.startsWith('q:')) options.push([p.filter,"Retry one question"]); options.forEach(([v,l])=>{ const n=el('option',l); n.value=v; select.append(n); }); select.value=p.filter; select.addEventListener('change',()=>setPracticeFilter(select.value)); selectLabel.append(select); intro.head.append(selectLabel); main.append(intro.card);
+  if(!p.questionIds.length) { intro.card.append(empty("No questions here yet",p.filter==='unresolved'?"Past mistakes are marked Resolved only after two consecutive correct retries.":"Choose a different practice scope or open the timed mock exam.")); return; }
+  const id=p.questionIds[p.index], q=qmap.get(id); if(!own(p.entries,id)) setField(p.entries,id,newEntry(id)); const entry=p.entries[id], attempt=entry.submitted?attemptFor(entry):null;
+  const layout=el('div',null,'question-layout'), content=el('section',null,'card'), aside=el('aside',null,'card'); content.append(questionMeta(q,p.index,p.questionIds.length),el('p',q.prompt,'q-prompt'));
+  content.append(answerInputs(q,entry.answer,entry.submitted,value=>{entry.answer=value; save();},entry.submitted));
+  const actions=el('div',null,'actions');
+  if(!entry.submitted) actions.append(button("Check answer",()=>{
+    if(!answered(q,entry.answer)) {announce("Answer the question before checking."); return;}
+    if(entry.submitted || state.attempts.some(a=>a.id===entry.attemptId)) return;
+    state.attempts.push({id:entry.attemptId,qid:id,mode:p.filter==='unresolved'||p.filter.startsWith('q:')?'review':'practice',sessionId:p.sessionId,submittedAt:Date.now(),answer:structuredAnswer(entry.answer),correct:q.type==='short'?null:scoreChoice(q,entry.answer),selfGraded:false}); entry.submitted=true; save(); render(); announce(q.type==='short'?"Assess this answer using the grading criteria.":"Attempt recorded.");
+  },'primary'));
+  else if(attempt.correct!==null) actions.append(button("Try again",()=>{setField(p.entries,id,newEntry(id)); save(); render(); announce("A new attempt has started. Your previous record is retained.");}));
+  content.append(actions); if(attempt) content.append(explanation(q,attempt,correct=>selfGrade(attempt,correct))); else content.append(el('p',"Suggested time for this question: about " + Math.ceil(q.estimated_seconds/60) + " min.",'sources'));
+  const nav=el('div',null,'row between'); const prev=button("← Previous",()=>{p.index--;save();render();}),next=button("Next →",()=>{p.index++;save();render();}); prev.disabled=p.index===0;next.disabled=p.index===p.questionIds.length-1;nav.append(prev,next);content.append(el('div',null,'divider'),nav);
+  aside.append(el('h3',"Question navigation"),el('p',"Green: latest correct · Red: latest incorrect",'small muted'));const grid=el('div',null,'qnav'); p.questionIds.forEach((qid,i)=>{const e=own(p.entries,qid)?p.entries[qid]:null,a=e&&e.submitted?attemptFor(e):null;const n=button(i+1,()=>{p.index=i;save();render();},(i===p.index?'current ':'')+(a?(a.correct===false?'missed':a.correct===true?'done':'filled'):''));n.setAttribute('aria-label',"Question "+(i+1)+(i===p.index?", current question":''));if(i===p.index)n.setAttribute('aria-current','step');grid.append(n);});aside.append(grid);layout.append(content,aside);main.append(layout);
+}
+const structuredAnswer = answer => Array.isArray(answer) ? answer.slice().sort((a,b)=>a-b) : answer;
+function empty(title, description) { const n=el('div',null,'empty');n.append(el('h3',title),el('p',description));return n; }
+function renderMistakes(main) {
+  const list=[...mistakeMap().values()].sort((a,b)=>(a.streak>=2)-(b.streak>=2)||b.lastAt-a.lastAt), intro=section("Turn mistakes into a review list","History is always retained. After a mistake, answer the question correctly twice in a row to mark it Resolved. Another incorrect answer resets the streak. Short-answer self-assessments are labeled separately.");main.append(intro.card);
+  if(!list.length){intro.card.append(empty("No past mistakes yet","Incorrect answers from practice and mock exams appear here automatically."));return;}
+  for(const m of list){const q=qmap.get(m.qid),row=el('div',null,'mistake-row'),copy=el('div'),meta=el('div',null,'badges');meta.append(badge(m.streak>=2?"Resolved":"Unresolved",m.streak>=2?'good':'bad'),badge("Correct streak: "+m.streak+'/2'),badge("Past mistakes: "+m.misses+" attempt(s)"));if(q.type==='short')meta.append(badge("Short answer: self-assessed / blank",'warn'));copy.append(meta,el('h3',q.prompt),el('p',tmap.get(q.topic_id).title+" · Latest record: "+stamp(m.lastAt),'small muted'));const actions=el('div',null,'actions');actions.append(button("Retry this question",()=>{setField(state.practice.entries,m.qid,newEntry(m.qid));state.view='practice';setPracticeFilter('q:'+m.qid);},'primary'));row.append(copy,actions);intro.card.append(row);}
+}
+function shuffle(values){const a=values.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function startMock(count){if(activeMock())return;const now=Date.now(),m={id:uid(),status:'active',questionIds:shuffle(mockIds).slice(0,count),startedAt:now,deadline:now+pack.plan.mock_minutes*60000,submittedAt:null,index:0,answers:Object.create(null)};state.mocks.push(m);state.view='mock';save();render();announce("Mock exam started. The deadline is fixed; refreshing will not restart the timer.");}
+function submitMock(m,expired){if(m.status!=='active')return;m.status='submitted';m.submittedAt=expired?m.deadline:Date.now();m.questionIds.forEach((id,i)=>{const q=qmap.get(id),answer=own(m.answers,id)?m.answers[id]:emptyAnswer(q),aid=m.id+':'+i;if(!state.attempts.some(a=>a.id===aid))state.attempts.push({id:aid,qid:id,mode:'mock',sessionId:m.id,submittedAt:m.submittedAt,answer:structuredAnswer(answer),correct:q.type==='short'?(answered(q,answer)?null:false):scoreChoice(q,answer),selfGraded:false});});save();announce(expired?"Time is up. Submitted automatically. Blanks count as incorrect; completed short answers await self-assessment.":"Submitted and saved this session.");}
+function mockScore(m){const records=state.attempts.filter(a=>a.sessionId===m.id&&a.mode==='mock');return{records,objective:records.filter(a=>qmap.get(a.qid).type!=='short'),short:records.filter(a=>qmap.get(a.qid).type==='short')};}
+function renderMock(main){
+  const active=activeMock();if(active){renderActiveMock(main,active);return;}
+  const intro=section("Check your knowledge with timed practice","Questions are drawn randomly from the mock pool without repeats within a session. Answers, explanations, and source hints stay hidden until submission. Leaving the exam asks for confirmation and submits it.");main.append(intro.card);
+  if(mockIds.length){const row=el('div',null,'row'),label=el('label',null,'field'),count=el('input');count.type='number';count.min='1';count.max=String(mockIds.length);count.step='1';count.value=String(mockIds.length);label.append(el('span',"Questions this session (pool: "+mockIds.length+" questions)"),count);row.append(label,badge("Time limit: "+pack.plan.mock_minutes+" min",'good'),button("Start timed mock exam",()=>{const value=Number(count.value);if(!Number.isInteger(value)||value<1||value>mockIds.length){announce("Enter an integer from 1 to "+mockIds.length+".");count.focus();return;}startMock(value);},'primary'));intro.card.append(row,el('p',"After submission, assess short answers using the criteria; results are listed separately. The objective score includes single and multiple choice only. Blank answers count as incorrect.",'small muted'));}else intro.card.append(empty("No mock-exam questions","All questions in this pack belong to the practice pool."));
+  const completed=state.mocks.filter(m=>m.status==='submitted').slice().reverse();if(!completed.length)return;
+  const history=section("Mock-exam history","All submitted sessions are retained. Open a review to check each question and assess pending short answers.");main.append(history.card);
+  completed.forEach(m=>{const score=mockScore(m),right=score.objective.filter(a=>a.correct).length,pending=score.short.filter(a=>a.correct===null).length,row=el('div',null,'history-row');const top=el('div',null,'row between');top.append(el('strong',stamp(m.startedAt)),badge(score.objective.length?"Objective: "+right+'/'+score.objective.length+' · '+Math.round(right/score.objective.length*100)+'%':"All questions are short answer",'good'),button("Review this session",()=>renderMockReview(main,m)));row.append(top,el('p',m.questionIds.length+" questions · "+(pending?"Awaiting self-assessment: "+pending+" question(s)":"Grading complete")+" · Submitted: "+stamp(m.submittedAt),'small muted'));history.card.append(row);});
+}
+function renderActiveMock(main,m){
+  const intro=section("Timed mock exam in progress","You can edit your answers. The deadline is fixed; the timer continues through refreshes and reopening. The exam submits automatically when time expires.");main.append(intro.card);const stats=el('div',null,'row between'),time=el('div');time.append(el('div',"Time remaining",'small muted'));const timer=el('div','—','timer');timer.id='mock-timer';timer.setAttribute('role','timer');timer.setAttribute('aria-label',"Mock-exam time remaining");time.append(timer);const done=m.questionIds.filter(id=>own(m.answers,id)&&answered(qmap.get(id),m.answers[id])).length;stats.append(time,badge("Answered: "+done+' / '+m.questionIds.length),button("Submit exam",()=>{const blanks=m.questionIds.length-m.questionIds.filter(id=>own(m.answers,id)&&answered(qmap.get(id),m.answers[id])).length;if(confirm("Submit this exam? "+(blanks?"There are "+blanks+" unanswered questions, which will count as incorrect. ":'')+"Answers cannot be changed after submission.")){submitMock(m,false);render();}},'primary'));intro.card.append(stats);const track=el('div',null,'progress-track'),fill=el('div',null,'progress-fill');fill.style.width=done/m.questionIds.length*100+'%';track.append(fill);intro.card.append(track);
+  const q=qmap.get(m.questionIds[m.index]),answer=own(m.answers,q.id)?m.answers[q.id]:emptyAnswer(q),layout=el('div',null,'question-layout'),content=el('section',null,'card'),aside=el('aside',null,'card');content.append(questionMeta(q,m.index,m.questionIds.length),el('p',q.prompt,'q-prompt'),answerInputs(q,answer,false,value=>{if(m.status!=='active'||Date.now()>=m.deadline){submitMock(m,true);render();return;}setField(m.answers,q.id,value);save();updateMockNavigation(m);},false));const nav=el('div',null,'row between'),prev=button("← Previous",()=>{m.index--;save();render();}),next=button("Next →",()=>{m.index++;save();render();});prev.disabled=m.index===0;next.disabled=m.index===m.questionIds.length-1;nav.append(prev,next);content.append(el('div',null,'divider'),nav);aside.append(el('h3',"Mock-exam navigation"),el('p',"Blue: answered · still editable",'small muted'));const grid=el('div',null,'qnav');grid.id='mock-navigation';aside.append(grid);layout.append(content,aside);main.append(layout);updateMockNavigation(m);
+}
+function updateMockNavigation(m){const grid=$('mock-navigation');if(!grid)return;grid.replaceChildren(...m.questionIds.map((id,i)=>{const filled=own(m.answers,id)&&answered(qmap.get(id),m.answers[id]),b=button(i+1,()=>{m.index=i;save();render();},(i===m.index?'current ':'')+(filled?'filled':''));b.setAttribute('aria-label',"Question "+(i+1)+", "+(filled?"answered":"unanswered"));if(i===m.index)b.setAttribute('aria-current','step');return b;}));const filled=m.questionIds.filter(id=>own(m.answers,id)&&answered(qmap.get(id),m.answers[id])).length;const progress=$('main').querySelector('.progress-fill');if(progress)progress.style.width=filled/m.questionIds.length*100+'%';const badges=$('main').querySelectorAll('.section-head + .row .badge');if(badges[0])badges[0].textContent="Answered: "+filled+' / '+m.questionIds.length;}
+function updateTimer(){const m=activeMock();if(!m)return;if(Date.now()>=m.deadline){submitMock(m,true);render();return;}const n=$('mock-timer');if(n){const secs=Math.ceil((m.deadline-Date.now())/1000);n.textContent=String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0');n.classList.toggle('urgent',secs<=60);const minute=Math.ceil(secs/60);if(secs<=60&&minute!==lastTimerAnnouncement){lastTimerAnnouncement=minute;announce("Less than 1 minute remains in the mock exam.");}}}
+function renderMockReview(main,m){
+  main.replaceChildren();const score=mockScore(m),right=score.objective.filter(a=>a.correct).length,intro=section("Session review",stamp(m.startedAt)+' · '+m.questionIds.length+" question(s)");intro.head.append(button("Back to mock-exam history",()=>render()));intro.card.append(el('h3',score.objective.length?"Objective: "+right+' / '+score.objective.length+' ('+Math.round(right/score.objective.length*100)+'%)':"No objective questions in this session; short-answer self-assessments are separate"),el('p',"Short answers — self-assessed understood: "+score.short.filter(a=>a.correct===true).length+", self-assessed needs work: "+score.short.filter(a=>a.selfGraded&&!a.correct).length+", unanswered: "+score.short.filter(a=>a.correct===false&&!a.selfGraded).length+", awaiting self-assessment: "+score.short.filter(a=>a.correct===null).length,'small muted'));main.append(intro.card);
+  m.questionIds.forEach((id,i)=>{const q=qmap.get(id),attempt=score.records.find(a=>a.qid===id),card=el('section',null,'card');card.append(questionMeta(q,i,m.questionIds.length),el('p',q.prompt,'q-prompt'),answerInputs(q,attempt.answer,true,()=>{},true),explanation(q,attempt,correct=>{if(attempt.correct!==null)return;attempt.correct=correct;attempt.selfGraded=true;save();metrics();renderMockReview(main,m);announce("Short-answer self-assessment recorded.");}));main.append(card);});
+}
+function renderWeakness(main){
+  const intro=section("Use your results to plan your review","Objective coverage and latest accuracy use the most recent attempt for each unique question. Error rankings use incorrect attempts / all objective attempts. Short-answer self-assessments are separate. Untested does not mean understood.");main.append(intro.card);
+  const stats=topicStats().sort((a,b)=>(b.attempts?b.misses/b.attempts:-1)-(a.attempts?a.misses/a.attempts:-1)||b.misses-a.misses),table=el('table',null,'report-table'),thead=el('thead'),tr=el('tr');["Topic","Objective coverage","Latest correct","Past errors / attempts","Short-answer self-assessment / pending"].forEach(x=>tr.append(el('th',x)));thead.append(tr);table.append(thead);const body=el('tbody');stats.forEach(s=>{const row=el('tr');row.append(el('td',s.topic.title),el('td',s.tested+'/'+s.objectiveTotal+(s.tested===0?" · Untested":'')),el('td',s.tested?s.tested-s.latestMisses+' / '+s.tested:'—'),el('td',s.misses+' / '+s.attempts+(s.attempts?' ('+Math.round(s.misses/s.attempts*100)+'%)':'')),el('td',"Self-assessed: "+s.selfTested+" questions; errors: "+s.selfMisses+'/'+s.selfAttempts+" attempts; pending: "+s.pending));body.append(row);});table.append(body);const wrap=el('div',null,'table-scroll');wrap.append(table);intro.card.append(wrap);
+  const grid=el('div',null,'topic-grid'),mm=mistakeMap();stats.forEach(s=>{const c=el('article',null,'card'),count=[...mm.values()].filter(m=>m.streak<2&&qmap.get(m.qid).topic_id===s.topic.id).length;c.append(badge(count?"Unresolved: "+count+" question(s)":s.tested?"Attempted":"Objective questions untested",count?'bad':s.tested?'good':'warn'),el('h3',s.topic.title),el('p',s.topic.summary,'small prewrap'),el('div',"Active recall: "+s.topic.recall_prompt,'recall'));grid.append(c);});main.append(grid);
+}
+function truncate(text,max){return text.length<=max?text:text.slice(0,max-1)+'…';}
+function fiveTopics(){const mm=mistakeMap(),stats=topicStats(),rank=stats.map((s,index)=>{const unresolved=[...mm.values()].filter(m=>m.streak<2&&qmap.get(m.qid).topic_id===s.topic.id).length;return{...s,unresolved,index};}).sort((a,b)=>b.unresolved-a.unresolved||(b.attempts?b.misses/b.attempts:-1)-(a.attempts?a.misses/a.attempts:-1)||a.index-b.index);return rank.slice(0,6);}
+function renderFive(main){const intro=section("Final 5 minutes: revisit the essentials","Recall first, then check the prompts. Unresolved mistakes come first, followed by past errors and other core topics. This brief recap includes up to 6 topics; it does not cover the entire exam scope.");intro.head.append(button("Export this recap",()=>download('five-minute-'+safeName(pack.pack_id)+'.md',fiveMarkdown(),'text/markdown;charset=utf-8')));main.append(intro.card);const sheet=el('div',null,'five-sheet');fiveTopics().forEach((s,i)=>{const t=s.topic,c=el('article',null,'card'),head=el('div',null,'five-title');head.append(el('div',(i+1)+'. '+truncate(t.title,75),'priority'),badge(s.unresolved?"Unresolved: "+s.unresolved+" question(s)":s.tested?"Objective questions attempted":"Objective questions untested",s.unresolved?'bad':s.tested?'good':'warn'));c.append(head,el('p',truncate(t.quick_tip||t.summary,220),'summary'),el('div',"Recall without looking: "+truncate(t.recall_prompt,140),'recall'),el('p',"Watch out: "+truncate(t.pitfalls[0]||"Check the question conditions, scope, and exceptions.",100),'trap'));sheet.append(c);});main.append(sheet);}
+function renderSources(main){const intro=section("Study scope, sources, and time","Questions are generated or adapted from the materials provided. Unverified references are not confirmed course requirements. Check conflicting material with your instructor.");main.append(intro.card);intro.card.append(el('p',pack.notice||"Follow the exam scope and grading requirements published by your instructor.",'prewrap'));const plan=el('div',null,'row');[["Practice",pack.plan.practice_minutes],["Mock exam",pack.plan.mock_minutes],["Review",pack.plan.review_minutes]].forEach(([label,n])=>plan.append(badge(label+' '+n+" min",'good')));intro.card.append(plan,el('p',pack.plan.rationale,'small prewrap'));pack.sources.forEach(s=>{const row=el('div',null,'source-item');row.append(badge({verified:"Verified against materials",unverified:"Unverified",general:"General knowledge"}[s.status],s.status==='verified'?'good':'warn'),el('h3',s.label),el('p',s.detail,'small prewrap'));intro.card.append(row);});intro.card.append(el('p',"Pack ID: "+pack.pack_id+" · Content fingerprint: "+fp,'small muted'));}
+function safeName(value){return value.replace(/[^a-zA-Z0-9_-]/g,'_').slice(0,70)||'study-pack';}
+function download(name,text,type){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function fiveMarkdown(){const lines=['# '+pack.title+" · Final 5 minutes",'',pack.notice,'',"Up to 6 topics, prioritizing unresolved mistakes. Untested topics do not imply understanding.",''];fiveTopics().forEach((s,i)=>{lines.push('## '+(i+1)+'. '+truncate(s.topic.title,75)+' ('+(s.unresolved?"Unresolved: "+s.unresolved+" question(s)":s.tested?"Objective questions attempted":"Objective questions untested")+')','',truncate(s.topic.quick_tip||s.topic.summary,220),'',"- Active recall: "+truncate(s.topic.recall_prompt,140),"- Common pitfall: "+truncate(s.topic.pitfalls[0]||"Check the question conditions, scope, and exceptions.",100),'');});return lines.join('\n');}
+function learningReport(){
+  const stats=topicStats(),mm=[...mistakeMap().values()],lines=['# '+pack.title+" · Study report",'', "Exported: "+stamp(Date.now()),"Pack: "+pack.pack_id+' / '+fp,'',pack.notice,'',"Objective coverage uses the latest attempt per unique question; error rates use all objective attempts. Short answers are student-assessed and excluded from objective scores.","These results cannot establish understanding of untested material. The reference answers below come from this pack and are not necessarily verified by an instructor or original slides. Check the source status of each question.",'',"## Topic analysis",''];
+  stats.forEach(s=>lines.push('- '+s.topic.title+": objective coverage "+s.tested+'/'+s.objectiveTotal+"; latest correct "+(s.tested-s.latestMisses)+'/'+s.tested+"; past errors "+s.misses+'/'+s.attempts+" attempts; self-assessed short-answer errors "+s.selfMisses+'/'+s.selfAttempts+" attempts; pending: "+s.pending+" attempts."));
+  lines.push('',"## Past mistakes",'');if(!mm.length)lines.push("No past mistakes yet.");mm.forEach(m=>{const q=qmap.get(m.qid);lines.push('- ['+(m.streak>=2?"Resolved":"Unresolved")+'] '+q.id+' · '+q.prompt.replace(/\n/g,' ')+"; past errors "+m.misses+" attempts; correct streak "+m.streak+'/2'+(q.type==='short'?"; includes student self-assessments / blanks":''));});
+  lines.push('',"## All attempt records",'');
+  state.attempts.forEach(a=>{
+    const q=qmap.get(a.qid),answer=q.type==='short'?a.answer:a.answer.map(i=>String.fromCharCode(65+i)+'. '+q.options[i]).join('; ');
+    lines.push('### '+a.qid+' · '+stamp(a.submittedAt),'',"Topic: "+tmap.get(q.topic_id).title,"Mode: "+a.mode+"; result: "+(a.correct===null?"Awaiting self-assessment":a.correct?"Correct":"Incorrect")+(a.selfGraded?" (student self-assessment; excluded from objective score)":''),'',"Question: "+q.prompt,'');
+    if(q.type!=='short'){q.options.forEach((text,i)=>lines.push('- '+String.fromCharCode(65+i)+'. '+text));lines.push('',"Correct answer (from pack): "+q.answer.map(i=>String.fromCharCode(65+i)+'. '+q.options[i]).join('; '));}
+    else{lines.push("Reference answer (from pack): "+q.reference_answer,'',"Grading criteria:");q.rubric.forEach(point=>lines.push('- '+point));}
+    lines.push('',"Student answer: "+(answer||"Unanswered"),'',"Explanation from pack: "+q.explanation);
+    if(q.type!=='short')q.option_explanations.forEach((text,i)=>lines.push('- '+String.fromCharCode(65+i)+" option explanation: "+text));
+    lines.push('',"Question origin: "+{adapted:"Adapted from materials",generated:"Generated practice",provided:"Original question provided by user"}[q.origin]);
+    if(!q.source_ids.length)lines.push("No specific source given.");
+    q.source_ids.forEach(id=>{const s=smap.get(id);lines.push('- '+s.label+' ['+{verified:"Verified against materials",unverified:"Unverified",general:"General knowledge"}[s.status]+']: '+s.detail);});
+    lines.push('');
+  });
+  lines.push('',fiveMarkdown());return lines.join('\n');
+}
+function backup(){return{format:'exam-study-progress',version:1,pack_id:pack.pack_id,fingerprint:fp,exported_at:new Date().toISOString(),progress:state};}
+function reportJSON(){const attempted=new Set(state.attempts.map(a=>a.qid));return{format:'exam-study-report',version:1,pack_id:pack.pack_id,fingerprint:fp,exported_at:new Date().toISOString(),title:pack.title,notice:pack.notice,answer_caveat:"Answers come from this pack and are not necessarily verified by an instructor or original slides. Check their source status.",sources:pack.sources,coverage_definition:"Objective coverage uses the latest attempt per unique question; error rates use all objective attempts. Student self-assessments are separate. Untested material cannot be judged from these results.",topics:topicStats(),questions:pack.questions.filter(q=>attempted.has(q.id)),mistakes:[...mistakeMap().values()].map(m=>({...m,resolved:m.streak>=2,question:qmap.get(m.qid).prompt})),attempts:state.attempts,mocks:state.mocks,five_minute:fiveMarkdown()};}
+function mergeProgress(incoming){
+  const current=JSON.parse(JSON.stringify(state)),byAttempt=new Map(current.attempts.map(a=>[a.id,a]));
+  for(const a of incoming.attempts){const previous=byAttempt.get(a.id);if(!previous){current.attempts.push(a);byAttempt.set(a.id,a);continue;}const left={...previous,correct:null,selfGraded:false},right={...a,correct:null,selfGraded:false};requireThat(stableString(left)===stableString(right),"The backup contains different attempts with the same ID");if(previous.correct===null&&a.selfGraded){Object.assign(previous,a);}else if(a.correct!==null&&previous.correct!==null)requireThat(previous.correct===a.correct&&previous.selfGraded===a.selfGraded,"Backup self-assessments conflict with existing records");}
+  current.attempts.sort((a,b)=>a.submittedAt-b.submittedAt);
+  const byMock=new Map(current.mocks.map(m=>[m.id,m]));for(const m of incoming.mocks){const previous=byMock.get(m.id);if(!previous){current.mocks.push(m);byMock.set(m.id,m);}else if(previous.status==='active'&&m.status==='submitted'){Object.assign(previous,m);}else if(previous.status===m.status){requireThat(stableString(previous)===stableString(m),"Backup and existing mock-exam records conflict");}}
+  current.practice=incoming.practice;current.view=current.mocks.some(m=>m.status==='active')?'mock':incoming.view;return validateProgress(current);
+}
+async function importFile(file){
+  if(!file)return;try{requireThat(file.size<=20*1024*1024,"The backup file exceeds 20 MB");const incoming=JSON.parse(await file.text());exactKeys(incoming,['format','version','pack_id','fingerprint','exported_at','progress'],"Backup");requireThat(incoming.format==='exam-study-progress'&&incoming.version===1&&incoming.pack_id===pack.pack_id&&incoming.fingerprint===fp,"This backup belongs to a different pack or content version and cannot be restored");requireThat(typeof incoming.exported_at==='string'&&Number.isFinite(Date.parse(incoming.exported_at)),"Invalid export timestamp");validateProgress(incoming.progress);if(!confirm("Restoring will merge attempt and mistake history and use the practice draft from the backup. "+(activeMock()?"The current mock exam will be submitted and retained first. ":'')+"Continue?"))return;const m=activeMock();if(m)submitMock(m,false);const merged=mergeProgress(incoming.progress);state=merged;save();render();announce("Backup progress merged. Existing attempt history is retained.");}catch(err){announce("Restore failed: "+err.message);}}
+$('pack-title').textContent=pack.title;$('pack-subtitle').textContent=pack.subtitle;document.title=pack.title+' · Study Coach';
+const unverified=pack.sources.some(s=>s.status==='unverified');if(pack.notice||unverified){$('pack-notice').hidden=false;$('pack-notice').textContent=(pack.notice||'')+(unverified?"\nSource note: this pack includes unverified sources. Check the affected questions and conclusions against the original materials.":'');}
+$('export-progress').addEventListener('click',()=>{download('study-progress-'+safeName(pack.pack_id)+'.json',JSON.stringify(backup(),null,2),'application/json');announce("Progress backup created, including answers, mistake history, and mock-exam deadlines.");});
+$('import-progress').addEventListener('click',()=>$('import-file').click());$('import-file').addEventListener('change',event=>{importFile(event.target.files[0]);event.target.value='';});
+$('export-report').addEventListener('click',()=>{if(activeMock())return;download('study-report-'+safeName(pack.pack_id)+'.md',learningReport(),'text/markdown;charset=utf-8');announce("Study report created with attempt records, weak areas, and the final recap.");});
+$('export-report-json').addEventListener('click',()=>{if(activeMock())return;download('study-report-'+safeName(pack.pack_id)+'.json',JSON.stringify(reportJSON(),null,2),'application/json');announce("Structured study report created. Use “Back up progress JSON” to restore progress.");});
+$('print-sheet').addEventListener('click',()=>{if(!activeMock())window.print();});
+$('reset-progress').addEventListener('click',()=>{if(!confirm("Clear all attempts, mistakes, and mock-exam history for this pack and content version? This cannot be undone. Other packs are unaffected. Back up first."))return;state=newProgress();try{localStorage.removeItem(storageKey);}catch(err){storageWarning("The browser could not delete saved progress.");}save();render();announce("Progress for this pack has been reset.");});
+window.addEventListener('beforeunload',event=>{if(activeMock()){event.preventDefault();event.returnValue='';}});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateTimer();});
+window.addEventListener('focus',updateTimer);
+render();timerId=setInterval(updateTimer,1000);
+})();
+</script>
+</body>
+</html>

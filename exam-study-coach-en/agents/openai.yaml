@@ -1,0 +1,4 @@
+interface:
+  display_name: "Exam Study Coach (English)"
+  short_description: "Build offline exam practice, mocks, and review cards"
+  default_prompt: "Use $exam-study-coach-en to introduce the guided preparation conversation, materials to gather, and final practice webpage, then ask for missing information step by step and build downloadable HTML from my materials and time. Use English for coaching, explanations, and review cards unless I request another language; keep questions in the official exam language. For continued study or the final five minutes, resume review directly."

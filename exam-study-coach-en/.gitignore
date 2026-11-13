@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local operating-system files
+.DS_Store
+Thumbs.db
+
+# Personal study exports belong on your device, outside the shared skill source.
+study-progress-*.json
+study-report-*.json
+study-report-*.md
+five-minute-*.md

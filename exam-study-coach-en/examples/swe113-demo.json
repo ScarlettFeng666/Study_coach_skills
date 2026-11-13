@@ -1,0 +1,1293 @@
+{
+  "schema_version": 1,
+  "pack_id": "swe113-exam1-html-demo-en-v1",
+  "title": "SWE 113 · Exam study pack demo",
+  "subtitle": "English questions and explanations · 30 single-choice questions",
+  "language": "en",
+  "notice": "This demo was converted from the user-provided SWE113_Exam1_30Q_Quiz_Based_Mock.html. It retains the original 30 question stems, options, and answer keys, with the original Chinese explanations translated into English. Additional option feedback and review cards were organized from those explanations. The original lecture slides, Study Guide, and Canvas quizzes were not available for verification; slide references are claims reproduced from the original HTML. All 30 questions are shared between practice and mock exams, so mock exams may repeat questions you have already seen. Use this demo to learn the workflow and review material; its scores are neither an assessment on unseen questions nor a prediction of actual exam results.",
+  "plan": {
+    "total_minutes": 90,
+    "practice_minutes": 45,
+    "mock_minutes": 30,
+    "review_minutes": 15,
+    "rationale": "90-minute demo plan: practice 30 questions at an estimated 75 seconds of independent answering each (37.5 minutes), plus about 7.5 minutes to read key explanations, for 45 minutes total; use the same 30 questions for a 30-minute familiarity mock exam, averaging 60 seconds per question; then spend 10 minutes reviewing mistakes and weak areas and 5 minutes actively recalling the recap cards, for 15 minutes of review. estimated_seconds covers independent answering only, excluding explanations. If you work more slowly, reduce the practice question count or allow more time. The only available pool contains these 30 questions, so practice and mock exams overlap and cannot provide an independent assessment of mastery."
+  },
+  "sources": [
+    {
+      "id": "s-001",
+      "label": "Original HTML Q01 · L1 slides 13–21",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L1 slides 13–21. The source conversion read BANK question 1 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-002",
+      "label": "Original HTML Q02 · L1 slides 16–19",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L1 slides 16–19. The source conversion read BANK question 2 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-003",
+      "label": "Original HTML Q03 · L2 slide 18; Exam Study Guide L1",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L2 slide 18; Exam Study Guide L1. The source conversion read BANK question 3 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-004",
+      "label": "Original HTML Q04 · L2 slides 8, 25",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L2 slides 8, 25. The source conversion read BANK question 4 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-005",
+      "label": "Original HTML Q05 · L2 slide 27",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L2 slide 27. The source conversion read BANK question 5 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-006",
+      "label": "Original HTML Q06 · L2 slide 24; L3 slide 10",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L2 slide 24; L3 slide 10. The source conversion read BANK question 6 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-007",
+      "label": "Original HTML Q07 · L2 slide 27; L3 slides 14–15",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L2 slide 27; L3 slides 14–15. The source conversion read BANK question 7 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-008",
+      "label": "Original HTML Q08 · L3 slide 21",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L3 slide 21. The source conversion read BANK question 8 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-009",
+      "label": "Original HTML Q09 · L3 slide 25",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L3 slide 25. The source conversion read BANK question 9 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-010",
+      "label": "Original HTML Q10 · L3 slides 24, 26",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L3 slides 24, 26. The source conversion read BANK question 10 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-011",
+      "label": "Original HTML Q11 · L3 slides 22, 26",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L3 slides 22, 26. The source conversion read BANK question 11 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-012",
+      "label": "Original HTML Q12 · L3 slides 22–23",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L3 slides 22–23. The source conversion read BANK question 12 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-013",
+      "label": "Original HTML Q13 · L3 slides 22–23",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L3 slides 22–23. The source conversion read BANK question 13 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-014",
+      "label": "Original HTML Q14 · L4 slides 8, 23–24",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L4 slides 8, 23–24. The source conversion read BANK question 14 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-015",
+      "label": "Original HTML Q15 · L4 slides 10–15",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L4 slides 10–15. The source conversion read BANK question 15 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-016",
+      "label": "Original HTML Q16 · L4 slides 3–4, 23",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L4 slides 3–4, 23. The source conversion read BANK question 16 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-017",
+      "label": "Original HTML Q17 · L4 slides 32–36",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L4 slides 32–36. The source conversion read BANK question 17 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-018",
+      "label": "Original HTML Q18 · L4 slides 30–31",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L4 slides 30–31. The source conversion read BANK question 18 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-019",
+      "label": "Original HTML Q19 · L5 slide 8",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L5 slide 8. The source conversion read BANK question 19 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-020",
+      "label": "Original HTML Q20 · L5 slides 8, 12, 15–16",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L5 slides 8, 12, 15–16. The source conversion read BANK question 20 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-021",
+      "label": "Original HTML Q21 · L5 slide 22",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L5 slide 22. The source conversion read BANK question 21 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-022",
+      "label": "Original HTML Q22 · L5 slides 23, 25–28",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L5 slides 23, 25–28. The source conversion read BANK question 22 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-023",
+      "label": "Original HTML Q23 · L6 slides 7–12",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slides 7–12. The source conversion read BANK question 23 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-024",
+      "label": "Original HTML Q24 · L6 slide 16; Exam Study Guide L5",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slide 16; Exam Study Guide L5. The source conversion read BANK question 24 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-025",
+      "label": "Original HTML Q25 · L6 slides 17–20",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slides 17–20. The source conversion read BANK question 25 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-026",
+      "label": "Original HTML Q26 · L6 slides 27–34, 36–38",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slides 27–34, 36–38. The source conversion read BANK question 26 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-027",
+      "label": "Original HTML Q27 · L6 slides 40–42; L3 slide 24",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slides 40–42; L3 slide 24. The source conversion read BANK question 27 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-028",
+      "label": "Original HTML Q28 · L6 slide 44",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slide 44. The source conversion read BANK question 28 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-029",
+      "label": "Original HTML Q29 · L6 slides 51–53",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slides 51–53. The source conversion read BANK question 29 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    },
+    {
+      "id": "s-030",
+      "label": "Original HTML Q30 · L6 slides 47–48; slide 16",
+      "status": "unverified",
+      "detail": "Reference reproduced from the original HTML; the original slides were unavailable for verification: L6 slides 47–48; slide 16. The source conversion read BANK question 30 in SWE113_Exam1_30Q_Quiz_Based_Mock.html. The question stem and answer key are retained; the original Chinese explanation is translated into English in this edition."
+    }
+  ],
+  "topics": [
+    {
+      "id": "team",
+      "title": "Team formation and conflict resolution",
+      "summary": "Teams progress through Forming, Storming, Norming, and Performing. During conflict, communicate directly, identify the issue, and use agreed ground rules; then establish working norms and move toward mature collaboration.",
+      "pitfalls": [
+        "Conflict during Storming needs attention; do not assume it will disappear permanently on its own.",
+        "Norming establishes working agreements; it is not the stage before team members have met."
+      ],
+      "recall_prompt": "Name the four team formation stages in order, and explain how to handle disagreement about responsibilities during Storming.",
+      "quick_tip": "Meet and find your role, work through conflict, establish norms, then collaborate effectively. Address conflict through communication and shared rules.",
+      "source_ids": [
+        "s-001",
+        "s-002"
+      ]
+    },
+    {
+      "id": "re-purpose",
+      "title": "The purpose and definition of RE, and investment in risk reduction",
+      "summary": "Requirements Engineering helps teams understand the problem and stakeholder needs, systematically specify and manage requirements, and reduce the risk of delivering the wrong system. Working software may still solve the wrong problem. Lower tolerance for risk generally calls for more requirements work.",
+      "pitfalls": [
+        "The three definitions of a requirement are different from the three parts of contemporary RE.",
+        "The inverse relationship concerns the risk one is willing to accept; do not substitute the inherent risk of the system."
+      ],
+      "recall_prompt": "Why can a project go wrong even when the team can write the code? How should RE effort change when the risk you are willing to accept decreases?",
+      "quick_tip": "RE helps the team build the right thing. Accepting less risk requires more requirements work.",
+      "source_ids": [
+        "s-003",
+        "s-004",
+        "s-006"
+      ]
+    },
+    {
+      "id": "re-lifecycle",
+      "title": "The requirements lifecycle and organizing information",
+      "summary": "The four major RE tasks are eliciting, analyzing and documenting, validating, and managing and evolving requirements. Fragmented interview notes still need analysis, recorded assumptions and exceptions, quantified critical attributes, and stakeholder validation. Updating requirements after policy changes is management and evolution.",
+      "pitfalls": [
+        "Do not split Analysis and Documentation into separate tasks and then omit Managing/Evolving.",
+        "A documented requirement is not necessarily validated, and it can still change later."
+      ],
+      "recall_prompt": "Which RE tasks apply when asking about needs, confirming recorded requirements, and updating them after a policy change?",
+      "quick_tip": "Elicit → analyze and document → validate → manage and evolve. Recorded requirements still need confirmation and ongoing maintenance.",
+      "source_ids": [
+        "s-005",
+        "s-007",
+        "s-030"
+      ]
+    },
+    {
+      "id": "requirement-types",
+      "title": "Functional requirements, process requirements, and technical constraints",
+      "summary": "Functional requirements describe behavior the system must provide. Project/process requirements specify development, delivery practices, or deadlines. Technical constraints restrict implementation choices in advance. Mandating React or integration with an existing platform is a constraint.",
+      "pitfalls": [
+        "A statement about the UI is not automatically a usability requirement; specifying the UI technology stack is still an implementation constraint.",
+        "A prototype delivery date governs project delivery rather than system behavior at runtime."
+      ],
+      "recall_prompt": "Classify sorting orders, delivering a prototype by a deadline, and mandating React. Why does each belong in that category?",
+      "quick_tip": "Ask what the statement specifies: system behavior is functionality, delivery arrangements are process, and mandated solution choices are constraints.",
+      "source_ids": [
+        "s-008",
+        "s-009",
+        "s-010",
+        "s-027"
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "Quality attributes and measurable performance requirements",
+      "summary": "Throughput and latency measure performance; availability and security are other specific quality attributes. When eliciting performance requirements, ask for measurable thresholds and operating conditions, such as the maximum delay for updating parking availability during peak hours.",
+      "pitfalls": [
+        "99.99% uptime measures Availability, not throughput.",
+        "Preventing unauthorized access expresses a security attribute. Without a mandated technical tool, do not automatically classify it as a technical constraint.",
+        "Words such as attractive or fast lack thresholds and operating conditions and are difficult to verify."
+      ],
+      "recall_prompt": "What do transactions/second, percentage uptime, and restrictions on unauthorized access measure? How can you ask for a measurable performance expectation?",
+      "quick_tip": "Identify what is being measured, then the threshold and conditions: throughput/latency concern performance, uptime concerns availability, and access protection concerns security.",
+      "source_ids": [
+        "s-011",
+        "s-012",
+        "s-013",
+        "s-026"
+      ]
+    },
+    {
+      "id": "goals",
+      "title": "From proposed solutions to business goals",
+      "summary": "A goal describes the business value or outcome to achieve: why the system is needed. When someone proposes a map, button, or technology stack, first ask which operational problem it solves, then consider alternatives and measurable success criteria.",
+      "pitfalls": [
+        "Button placement, databases, and frameworks are implementation choices and cannot replace business goals.",
+        "A high-level goal still needs measurable Success Criteria."
+      ],
+      "recall_prompt": "A stakeholder says the system must have a map. What would you ask next to uncover the goal?",
+      "quick_tip": "Turn which feature should we build into which problem should we solve and what value should we create; then define measurable success criteria.",
+      "source_ids": [
+        "s-014",
+        "s-015"
+      ]
+    },
+    {
+      "id": "scope-risk",
+      "title": "Scope decisions and acceptable remaining risk",
+      "summary": "Decide whether to add a feature by considering alignment with goals, value, priority, effort, schedule impact, and risk. Elicitation can never be guaranteed complete forever. Construction can begin when important gaps and new scenarios are rare and the remaining risk is acceptable.",
+      "pitfalls": [
+        "A feature that looks small, or comes from a manager, still needs a scope impact assessment.",
+        "Beginning construction does not require requirements to remain unchanged forever or every proposed feature to be implemented."
+      ],
+      "recall_prompt": "How should a team decide whether to accept a new feature under a tight schedule? What signals justify ending intensive elicitation?",
+      "quick_tip": "Before adding a feature, assess goals, benefits, and costs. Before construction, check that important gaps are few and remaining risk is acceptable.",
+      "source_ids": [
+        "s-016",
+        "s-028"
+      ]
+    },
+    {
+      "id": "context",
+      "title": "System boundaries and context diagrams",
+      "summary": "The System Boundary separates the system from its context. The Context Boundary separates relevant context from the irrelevant environment. In the notation described by the original question, a context diagram uses a central circle for the system, rectangles for external entities, and labeled directional arrows for flows, treating the system as a black box.",
+      "pitfalls": [
+        "A context diagram does not expand internal classes or private methods.",
+        "System Boundary and Context Boundary separate different things."
+      ],
+      "recall_prompt": "What does each boundary separate? What do the center, external entities, and arrows in a context diagram represent?",
+      "quick_tip": "Separate the system from its environment, then relevant context from irrelevant surroundings. A context diagram focuses on interactions with external entities.",
+      "source_ids": [
+        "s-017",
+        "s-018"
+      ]
+    },
+    {
+      "id": "stakeholders",
+      "title": "Stakeholder identification, analysis, and modeling",
+      "summary": "A stakeholder is anyone who influences requirements or is affected by the system, including operations, maintenance, and regulatory groups beyond direct users. Analysis can record motivation, authority, relationships, expertise, expectations, availability, and priority. A Rich Picture uses nodes, relationship edges, and concern bubbles to represent these relationships.",
+      "pitfalls": [
+        "Interviewing only payers, direct users, or people with approval authority omits relevant groups.",
+        "A Rich Picture focuses on stakeholders and their relationships; a Context Diagram focuses on the system, external entities, and flows."
+      ],
+      "recall_prompt": "Why should a parking system team interview more than drivers and administrators? How do a Rich Picture and a Context Diagram differ in focus?",
+      "quick_tip": "Find people by asking who influences and who is affected. Analyze their motivations and relationships, then select a suitable model.",
+      "source_ids": [
+        "s-019",
+        "s-020",
+        "s-021",
+        "s-022"
+      ]
+    },
+    {
+      "id": "elicitation",
+      "title": "Multiple elicitation sources, contextual observation, and co-creation",
+      "summary": "Requirements elicitation explores the problem world and discovers requirements. Sources include stakeholders, documents, and existing systems, with context, goals, and observations also influencing requirements. Observing work in context can reveal tacit tasks and exceptions. Innovation can involve exploring deeper goals, alternatives, future scenarios, and technology tradeoffs with stakeholders.",
+      "pitfalls": [
+        "Do not rely only on the project sponsor or developer assumptions.",
+        "Elicitation does not mean implementing every solution the customer suggests.",
+        "Innovation is neither copying the current workflow unchanged nor imposing developer ideas unilaterally."
+      ],
+      "recall_prompt": "How can you elicit requirements when staff cannot explain their real workflow? How can innovative requirements be discovered together with stakeholders?",
+      "quick_tip": "Understand the problem through multiple information sources. Observe hard-to-describe workflows in context, and explore innovation collaboratively around goals.",
+      "source_ids": [
+        "s-023",
+        "s-024",
+        "s-025",
+        "s-029"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-001",
+      "topic_id": "team",
+      "type": "single",
+      "prompt": "Which statement best describes the stages of team formation?",
+      "options": [
+        "Forming focuses on initial orientation; Storming involves conflicts; Norming establishes collaborative behaviors; Performing is mature teamwork.",
+        "Storming is when teamwork becomes fully mature and conflict disappears permanently.",
+        "Norming happens before team members first meet each other.",
+        "Performing is when a team first negotiates who has authority."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The four stages are Forming → Storming → Norming → Performing. Storming involves negotiating roles and authority and working through conflict; Norming establishes working agreements; Performing represents mature team collaboration.",
+      "option_explanations": [
+        "Correct: the four stages and their main characteristics match the original explanation.",
+        "Storming involves negotiating roles, authority, and conflict. It is not mature collaboration and does not guarantee conflict disappears permanently.",
+        "Norming follows initial acquaintance and conflict negotiation and establishes working agreements.",
+        "Initial negotiation of roles and authority is closer to Storming; Performing means mature collaboration."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-001"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-002",
+      "topic_id": "team",
+      "type": "single",
+      "prompt": "A SWE 113 team has a disagreement about responsibilities. Which is the BEST response?",
+      "options": [
+        "Ignore it and hope the conflict goes away.",
+        "Communicate directly, use agreed team ground rules, and address the specific issue.",
+        "Allow the most senior member to decide without discussion.",
+        "Treat disagreement as evidence the team should stop working together."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The instructor's advice for Storming is to communicate clearly, write down the issue, refer to ground rules, and address conflict directly rather than avoid it.",
+      "option_explanations": [
+        "Avoidance leaves the responsibility dispute unresolved and contradicts the advice to communicate and address conflict directly.",
+        "Correct: direct communication, shared rules, and a concrete issue match the original explanation's approach.",
+        "Deciding solely by seniority bypasses communication and shared rules and does not resolve disagreement collaboratively.",
+        "Disagreement can occur during Storming; it does not by itself justify ending the collaboration."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-002"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-003",
+      "topic_id": "re-purpose",
+      "type": "single",
+      "prompt": "According to the lectures, what is the hardest part of software engineering?",
+      "options": [
+        "Choosing the fastest programming language.",
+        "Writing code with no syntax errors.",
+        "Building the right thing by understanding the problem and agreeing on what to build.",
+        "Building software without any involvement from stakeholders."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The original explanation cites Lecture 2 Slide 18: the hardest part of software engineering is building the right thing. Technically working software does not necessarily solve the real problem.",
+      "option_explanations": [
+        "Language performance is not the central difficulty emphasized here; the challenge is understanding the problem and building the right system.",
+        "The absence of syntax errors only concerns the code; the software may still fail to solve the real problem.",
+        "Correct: understanding the problem, reaching agreement, and building the right thing are the focus of the original explanation.",
+        "Excluding stakeholders hinders understanding of real needs and works against building the right system."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-003"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-004",
+      "topic_id": "re-purpose",
+      "type": "single",
+      "prompt": "Which choice BEST captures the three main parts of the contemporary definition of Requirements Engineering?",
+      "options": [
+        "Stakeholder need, system capability, and documented representation.",
+        "Code implementation, debugging, and deployment.",
+        "Interviews, prototypes, and programming.",
+        "Systematic specification/management, understanding stakeholder needs, and minimizing the risk of the wrong system."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Key correction: the first option lists the three definitions of a requirement (cited as Lecture 2 Slide 8), rather than the three parts of contemporary RE. Contemporary RE emphasizes systematic specification and management, understanding stakeholders, and reducing the risk of delivering the wrong system.",
+      "option_explanations": [
+        "This lists three definitions of a requirement and confuses a requirement with contemporary RE.",
+        "Implementation, debugging, and deployment are development activities; they do not express understanding needs or reducing the risk of delivering the wrong system.",
+        "Interviews and prototypes can support requirements work, but a list of tools or activities is not the three-part definition of contemporary RE.",
+        "Correct: systematic specification and management, understanding stakeholders, and reducing the risk of delivering the wrong system match the original explanation."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-004"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-005",
+      "topic_id": "re-lifecycle",
+      "type": "single",
+      "prompt": "Which list contains ALL four major tasks of RE, as presented in Lecture 2?",
+      "options": [
+        "Elicit; analyze and document; validate; manage and evolve requirements.",
+        "Elicit; analyze; specify; validate (with no subsequent management).",
+        "Design; code; test; deploy.",
+        "Interview; prototype; implement; market."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The four tasks are Eliciting, Analyzing AND Documenting, Validating, and Managing AND Evolving. Analysis and Documentation form one task; Managing/Evolving must not be omitted.",
+      "option_explanations": [
+        "Correct: analysis and documentation are combined, while management and evolution are retained.",
+        "Separating analysis and specification in this list leaves out subsequent management and evolution.",
+        "This is a list of development activities from design to deployment, rather than the four RE tasks.",
+        "Interviews and prototypes are only some techniques; implementation and marketing cannot replace validation or management and evolution."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-005"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-006",
+      "topic_id": "re-purpose",
+      "type": "single",
+      "prompt": "The effort invested in RE should be ______ proportional to the level of risk one is willing to accept.",
+      "options": [
+        "directly",
+        "unrelated",
+        "inversely",
+        "randomly"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The less risk one is willing to accept, the more RE effort is needed. Accepting higher risk can justify less initial requirements work. The key phrase is willing to accept/take, rather than the inherent risk of the system.",
+      "option_explanations": [
+        "For the risk one is willing to accept, the original explanation states an inverse relationship: lower risk tolerance calls for more RE.",
+        "The original explanation explicitly relates RE effort to acceptable risk; they are not unrelated.",
+        "Correct: the less willing you are to risk delivering the wrong system, the more requirements work is needed.",
+        "Effort has a defined relationship to risk tolerance and is not random."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-006"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-007",
+      "topic_id": "re-lifecycle",
+      "type": "single",
+      "prompt": "The APM team asks drivers about unmet parking needs, confirms a written requirement with them, and later updates it when campus rules change. Which sequence is correct?",
+      "options": [
+        "Validation → Elicitation → Documentation",
+        "Elicitation → Validation → Management/Evolution",
+        "Evolution → Implementation → Testing",
+        "Analysis → Deployment → Architecture"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Asking about real needs is Elicitation. Confirming that a recorded requirement matches those needs is Validation. Updating requirements after policy changes is Management/Evolution.",
+      "option_explanations": [
+        "Asking about unmet needs starts with Elicitation; the original explanation also classifies the final update as evolution.",
+        "Correct: asking about needs, confirming the record, and updating it after a policy change are elicitation, validation, and management/evolution.",
+        "The scenario contains no implementation or testing activity, and the initial interview is not Evolution.",
+        "The scenario contains no deployment or architecture design; confirming the record is Validation."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-007"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-008",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "“A user shall be able to sort order history by date, item name, or price.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Project/process requirement",
+        "Performance requirement",
+        "Constraint"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "This describes behavior the system must provide: sorting orders. It is a Functional Requirement rather than a speed target or development restriction.",
+      "option_explanations": [
+        "Correct: sorting order history is behavior the system must provide.",
+        "The statement describes product behavior, without specifying a development or delivery process.",
+        "No speed, latency, or throughput threshold is stated, so this is not a performance requirement.",
+        "No implementation technology or other solution restriction is specified; the statement requires a sorting function."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-008"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-009",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "“A prototype of the system shall be delivered by November 1.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Specific quality requirement",
+        "Project/process requirement",
+        "Technical constraint"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A delivery deadline specifies how the system is developed or delivered and is a Project/process Requirement.",
+      "option_explanations": [
+        "The prototype deadline concerns project delivery rather than a system function at runtime.",
+        "The deadline does not describe a product quality attribute such as availability or security.",
+        "Correct: specifying when the prototype must be delivered is a project/process requirement.",
+        "The statement does not mandate a technical solution; it specifies delivery timing."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-009"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-010",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "“The system user interface shall be implemented using React.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Constraint",
+        "Performance requirement",
+        "Reliability requirement"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "React is a mandated technology choice that restricts the implementation solution space, so it is a Constraint. A statement about the UI is not automatically a Usability Requirement.",
+      "option_explanations": [
+        "The statement specifies implementation technology rather than functional UI behavior.",
+        "Correct: mandating React restricts the available implementation choices.",
+        "There is no latency or throughput metric; React is a restriction on technology selection.",
+        "No reliability objective is stated. Mandating a framework is not equivalent to a reliability requirement."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-010"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-011",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "“The system shall support at least 20 transactions per second.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Project/process requirement",
+        "Constraint",
+        "Quality requirement: performance"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Transactions/second measures throughput and is a Performance Quality Requirement.",
+      "option_explanations": [
+        "The focus is a threshold for transactions per second, measuring the quality attribute of throughput.",
+        "Transactions per second is a runtime metric and does not specify a development or delivery process.",
+        "No technical solution is mandated; the statement describes the throughput level the system must achieve.",
+        "Correct: at least 20 transactions/second is a throughput requirement within performance."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-011"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-012",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "“The system must be available 99.99% of the time.” This is primarily a:",
+      "options": [
+        "Functional requirement",
+        "Quality requirement: specific quality (availability)",
+        "Project/process requirement",
+        "Performance requirement (throughput)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The percentage measures Availability, a Specific Quality Requirement. It does not measure response speed or throughput.",
+      "option_explanations": [
+        "The uptime percentage describes availability quality and does not request a new function.",
+        "Correct: 99.99% available time measures Availability.",
+        "The percentage of available time is neither a development step nor a delivery date.",
+        "Uptime percentage is different from transactions processed per second and should not be classified as throughput."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-012"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-013",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "“Stored credit card information shall not be accessible to unauthorized users.” This is primarily a:",
+      "options": [
+        "Constraint",
+        "Functional requirement",
+        "Quality requirement: specific quality (security)",
+        "Project/process requirement"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "This requires a Security attribute rather than mandating a particular technical tool or compliance framework, so it is classified as Specific Quality.",
+      "option_explanations": [
+        "No tool, framework, or implementation solution is mandated; the original explanation classifies this as a security quality attribute.",
+        "The question emphasizes the security property of preventing unauthorized access rather than describing a particular functional operation.",
+        "Correct: preventing unauthorized users from accessing stored credit card information expresses Security.",
+        "The statement does not specify a development or delivery process; it concerns the product's security attribute."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-013"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-014",
+      "topic_id": "goals",
+      "type": "single",
+      "prompt": "Pooch Palace plans a new management app. Which statement is the BEST high-level business goal?",
+      "options": [
+        "Improve customer convenience and reduce reservation handling time.",
+        "Place a “Reserve Now” button in the upper-right corner.",
+        "Use SQL tables for dog accounts.",
+        "Implement the interface using React."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "A Goal describes the value or business outcome the system should produce: WHY it is needed. Buttons, databases, and technology stacks are design or implementation choices. A useful goal should subsequently have measurable Success Criteria.",
+      "option_explanations": [
+        "Correct: improving convenience and reducing processing time describe business outcomes; measurable success criteria can be added next.",
+        "Button placement is a specific interface design choice and cannot replace a business value goal.",
+        "SQL tables are an implementation choice and do not explain why the system is needed or the desired business outcome.",
+        "React is a technology choice and does not describe the business value the system should produce."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-014"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-015",
+      "topic_id": "goals",
+      "type": "single",
+      "prompt": "A stakeholder says, “FixIt! must show a map of maintenance issues.” What is the MOST useful next question for identifying a goal?",
+      "options": [
+        "Which map color do you prefer?",
+        "Which coding framework should implement the map?",
+        "Can we build the map before collecting requirements?",
+        "Why do you need that map, and what operational problem should it solve?"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Repeatedly asking WHY moves from a proposed solution back to the underlying problem and desired business value, uncovering the Goal and allowing better alternatives to be considered.",
+      "option_explanations": [
+        "Choosing map colors refines the design without asking about the underlying operational problem.",
+        "Choosing a framework jumps ahead to implementation and does not explain why a map is needed.",
+        "Building the map first commits to a solution before understanding the stakeholder's problem.",
+        "Correct: asking WHY and exploring the operational problem moves from the solution back to the underlying goal."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-015"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-016",
+      "topic_id": "scope-risk",
+      "type": "single",
+      "prompt": "FixIt! staff propose a small “shout-out” feature, but the schedule is tight. What is the BEST RE response?",
+      "options": [
+        "Immediately add it because a manager requested it.",
+        "Evaluate value, goal alignment, priorities, effort, schedule impact, and risks before deciding.",
+        "Reject all proposed changes without analysis.",
+        "Build it secretly and update the scope afterward."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Do not expand Scope merely because a feature seems small. Assess alignment with Goals, costs and benefits, priority, schedule, and risk before accepting it or deferring it to a later release.",
+      "option_explanations": [
+        "A manager's request still needs analysis of value, schedule, goals, and risk.",
+        "Correct: evaluate goals, benefits, priority, effort, and delivery impact before deciding the scope.",
+        "Rejecting all changes skips analysis and may discard valuable, acceptable changes.",
+        "Secretly expanding scope bypasses impact assessment and the scope decision."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-016"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-017",
+      "topic_id": "context",
+      "type": "single",
+      "prompt": "Which description of a context diagram matches Lecture 4?",
+      "options": [
+        "A detailed class diagram showing private software methods.",
+        "A timeline of weekly development milestones.",
+        "A central system circle, external entities as rectangles, and labeled directional flows.",
+        "A list of stakeholders ranked only by authority."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "In the notation described here, a Context Diagram uses a central circle for the system, rectangles for external entities, and directional arrows for data, control, or material flows. It normally treats the system as a black box and omits internal class structure.",
+      "option_explanations": [
+        "A context diagram treats the system as a black box rather than expanding private methods or internal classes.",
+        "A weekly milestone timeline shows progress rather than interactions between the system and external entities.",
+        "Correct: the central system, external entities, and labeled directional flows match the notation in the original explanation.",
+        "Ranking stakeholders by authority is part of stakeholder analysis and does not represent context flows."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-017"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-018",
+      "topic_id": "context",
+      "type": "single",
+      "prompt": "What is the difference between a system boundary and a context boundary?",
+      "options": [
+        "The system boundary separates the system from its context; the context boundary separates relevant context from irrelevant environment.",
+        "Both boundaries mark programming modules inside the system.",
+        "A context boundary separates database tables from application code.",
+        "The system boundary is always identical to the campus boundary."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The System Boundary separates the system itself from its surrounding context; the Context Boundary separates the environment relevant to requirements from irrelevant surroundings. These are different concepts.",
+      "option_explanations": [
+        "Correct: the first separates system and context; the second separates relevant context from the irrelevant environment.",
+        "Neither boundary divides internal program modules; both concern the scope of the system and its environment.",
+        "Separating database tables from application code is an internal technical distinction, not the definition of Context Boundary.",
+        "The System Boundary depends on the system scope and is not necessarily the geographic campus boundary."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-018"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-019",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "Which is the BEST and most complete definition of a stakeholder?",
+      "options": [
+        "Only those who pay for the system.",
+        "Only its daily end users.",
+        "Only those with authority to approve code changes.",
+        "Anyone who influences the requirements and/or is affected by the system."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Stakeholders may include users, developers, administrators, regulators, maintainers, and customers. They need not directly use or buy the system.",
+      "option_explanations": [
+        "Payers are only one subset of stakeholders; affected people who do not pay may also qualify.",
+        "Daily users do not cover everyone; regulators, maintainers, and other indirect users can also be relevant.",
+        "Authority to approve code is not required; anyone who influences requirements or is affected by the system may qualify.",
+        "Correct: the definition includes both influencing requirements and being affected by the system."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-019"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-020",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "The APM team considers drivers and administrators but ignores accessibility services, parking officers, IT staff, and regulators. What is the MAIN problem?",
+      "options": [
+        "Only the customer should be considered.",
+        "Relevant stakeholders who affect or are affected by APM have been omitted.",
+        "Every stakeholder must be a software engineer.",
+        "There are too many end users."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Identify stakeholders through reference checklists, the business/operating environment, and Goals. Include affected groups early rather than interviewing only direct users.",
+      "option_explanations": [
+        "Considering only the customer would continue to omit other groups who influence or are affected by the system.",
+        "Correct: omitting accessibility, enforcement, IT, and regulatory groups leaves relevant perspectives uncovered.",
+        "Stakeholders need not be software engineers; they may be regulators or users.",
+        "The problem is omitted relevant groups rather than too many users."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-020"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-021",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "Which set of information belongs in a stakeholder analysis/model?",
+      "options": [
+        "Motivation, authority, relationships, expertise, expectations, availability, and priority.",
+        "Only age, major, and personal hobbies.",
+        "Only the number of user interface pages.",
+        "Only software source files and compilation time."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The original explanation cites Lecture 5 Slide 22 as listing Motivation, Authority, Relations, Level of Expertise, Expectations, Availability, and Priority.",
+      "option_explanations": [
+        "Correct: these dimensions match the stakeholder analysis information listed in the original explanation.",
+        "Age, major, and hobbies alone do not describe requirements-related motivation, authority, or expectations.",
+        "The number of interface pages describes product structure and cannot replace analysis of people's motivations and relationships.",
+        "Source files and compilation time are implementation information and do not characterize stakeholders."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-021"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-022",
+      "topic_id": "stakeholders",
+      "type": "single",
+      "prompt": "A stakeholder model represents stakeholders as nodes, their relationships as edges, and concerns in speech bubbles. This is a:",
+      "options": [
+        "Context diagram",
+        "System architecture diagram",
+        "Rich picture",
+        "Burndown chart"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A Rich Picture represents stakeholders as nodes, their relationships as edges, and main concerns in speech or thought bubbles. Distinguish it from a Context Diagram, which shows a central system, external entities, and flows.",
+      "option_explanations": [
+        "A Context Diagram centers on the system, external entities, and flows, rather than the stakeholder relationships and bubbles described.",
+        "An architecture diagram emphasizes system structure; here the nodes are stakeholders and the edges are their relationships.",
+        "Correct: stakeholder nodes, relationship edges, and concern bubbles describe the Rich Picture in the original explanation.",
+        "A burndown chart concerns progress, while this description represents stakeholder relationships and concerns."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-022"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-023",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "Which option correctly describes important sources of requirements information?",
+      "options": [
+        "Only comments made by the project sponsor.",
+        "Stakeholders, documents, and existing systems; context, goals, and observations also influence requirements.",
+        "Only new software features found on competitors’ websites.",
+        "Only the developer’s personal assumptions."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The original explanation cites Lecture 6 Slides 7–12: the main sources are Stakeholders, Documents, and Existing Systems. Context, Goals, and Observations also influence requirements, and informal observations can be important.",
+      "option_explanations": [
+        "Listening only to the project sponsor omits documents, existing systems, and other stakeholders.",
+        "Correct: this includes the main sources and recognizes the influence of context, goals, and observations.",
+        "Competitor features provide limited information and cannot replace understanding actual stakeholders and the problem context.",
+        "Developer assumptions need confirmation and cannot serve as the only information source."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-023"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-024",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "Which statement BEST describes requirements elicitation?",
+      "options": [
+        "Implementing every solution suggested by the customer.",
+        "Writing tests only after coding finishes.",
+        "Fixing defects detected in production.",
+        "Discovering system requirements and exploring the problem world, using multiple information sources."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Elicitation discovers requirements and explores the problem world. It is more than asking What do you want? or directly implementing solutions suggested by users.",
+      "option_explanations": [
+        "The customer has proposed possible solutions; elicitation still needs to explore the underlying problems and needs.",
+        "Writing tests after coding does not define exploring the problem world and discovering requirements.",
+        "Fixing production defects is not the same as requirements elicitation.",
+        "Correct: elicitation uses multiple information sources to discover requirements and explore the problem world."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-024"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-025",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "APM officers have difficulty describing their real workflow. Which elicitation practice is MOST appropriate to reveal tacit tasks and exceptions?",
+      "options": [
+        "Observe officers performing their work in context.",
+        "Assume every officer follows the same workflow.",
+        "Skip officers and interview only developers.",
+        "Wait until system deployment to learn the workflow."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Observe, or observation in the work context, can reveal tacit requirements, unusual operations, and exceptions that stakeholders struggle to articulate. The original explanation also lists Ask, Collaborate, Build and play, and Analyze as Lecture 6 practice categories.",
+      "option_explanations": [
+        "Correct: contextual observation can reveal hard-to-articulate tacit tasks and exceptional operations.",
+        "Assuming identical workflows may hide exactly the differences and exceptions the question seeks to uncover.",
+        "Asking only developers loses information from the officers' actual working context.",
+        "Waiting until deployment misses the chance to discover requirements before construction."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-025"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-026",
+      "topic_id": "quality",
+      "type": "single",
+      "prompt": "Which is the BEST question for eliciting a measurable performance requirement for APM?",
+      "options": [
+        "Should APM be pretty?",
+        "Which programming language is most fashionable?",
+        "What maximum delay is acceptable for updating displayed parking availability during peak hours?",
+        "Can we postpone all discussion about performance until launch?"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Performance Elicitation asks for quantifiable speed, latency, throughput, and related measures. Option C includes a measurable maximum delay and the peak-hour operating condition.",
+      "option_explanations": [
+        "Pretty is neither a performance dimension nor a measurable threshold.",
+        "A fashionable language is a technology preference and does not elicit latency, throughput, or other performance requirements.",
+        "Correct: asking for the maximum delay under peak-hour conditions supports a measurable performance requirement.",
+        "Postponing discussion elicits no performance expectations and establishes no measurable target."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-026"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-027",
+      "topic_id": "requirement-types",
+      "type": "single",
+      "prompt": "Which question is MOST directly aimed at identifying a technical CONSTRAINT on the APM solution?",
+      "options": [
+        "What would make the system enjoyable to use?",
+        "Must APM integrate with the existing myCommute system or use specified campus platforms?",
+        "How quickly should a map screen load?",
+        "How many users will need the “Find Parking” feature?"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Technical constraints restrict solution choices, such as mandatory integration with an existing system or use of a specified platform. Loading speed concerns Performance; ease of use concerns Usability; the number of feature users provides requirements context.",
+      "option_explanations": [
+        "Enjoyability and ease of use concern Usability without mandating a technical solution.",
+        "Correct: mandatory integration with an existing system or use of a specified platform restricts solution choices.",
+        "Loading time concerns Performance without prescribing implementation technology.",
+        "The number of people using a feature provides context without directly mandating a technical solution restriction."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-027"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-028",
+      "topic_id": "scope-risk",
+      "type": "single",
+      "prompt": "When can a team reasonably stop intensive elicitation and begin construction?",
+      "options": [
+        "Only when absolutely no requirement could ever change again.",
+        "Whenever one manager says “we are finished,” regardless of gaps.",
+        "Only after every feature proposed by any user has been implemented.",
+        "When new scenarios and gaps are rare, new features are mostly out of scope/low priority, and the remaining risk is acceptable."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "The original explanation cites Slide 44: requirements discovery can never be guaranteed completely finished. The goal is good enough for development to proceed at acceptable risk. Look for repetition, few new scenarios, and no important remaining gaps.",
+      "option_explanations": [
+        "Requirements may continue to change; a guarantee of no future changes is not a realistic stopping condition.",
+        "One manager's declaration cannot replace an assessment of important gaps and remaining risk.",
+        "Elicitation does not mean implementing every proposal, and construction need not wait until all features are complete.",
+        "Correct: few new scenarios or important gaps, together with acceptable remaining risk, support beginning construction."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-028"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-029",
+      "topic_id": "elicitation",
+      "type": "single",
+      "prompt": "For FixIt!, what is the BEST way to elicit innovative requirements?",
+      "options": [
+        "Explore deeper stakeholder goals together, propose alternatives, future scenarios, and technology possibilities with pros/cons.",
+        "Copy the current manual workflow exactly, with no changes.",
+        "Let the development team impose ideas without stakeholder input.",
+        "Avoid discussing needs and focus only on existing screens."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The original explanation cites Lecture 6 Slides 51–53: innovate together with stakeholders by exploring Goals, alternatives, future scenarios, and technology possibilities, including Functionality, Performance, and Usability.",
+      "option_explanations": [
+        "Correct: co-create around stakeholder goals and compare alternatives, future scenarios, and technology tradeoffs.",
+        "Copying the current workflow unchanged rules out opportunities to discover better solutions.",
+        "Developer-imposed ideas omit stakeholder participation and exploration of goals.",
+        "Focusing only on existing screens neglects needs, deeper goals, and future scenarios."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-029"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    },
+    {
+      "id": "q-030",
+      "topic_id": "re-lifecycle",
+      "type": "single",
+      "prompt": "After collecting unstructured stakeholder notes for APM, what is the BEST next step?",
+      "options": [
+        "Treat all notes as confirmed final requirements.",
+        "Only record the features developers remember.",
+        "Analyze and organize requirements, document assumptions and exceptional cases, quantify critical attributes, and validate with stakeholders.",
+        "Delete conflicting comments without asking any follow-up questions."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The original explanation cites Lecture 6 Slides 47–48: analyze and organize fragmented information; document incrementally; record assumptions and exceptional workflows; quantify critical attributes; and align terminology. Recorded requirements still need Validation and Management.",
+      "option_explanations": [
+        "Interview notes without analysis and validation cannot be treated as confirmed final requirements.",
+        "Recording only what developers remember can omit assumptions, exceptions, and critical attributes.",
+        "Correct: analyze, organize, document, and quantify, then validate with stakeholders, matching the original explanation.",
+        "Deleting conflicting comments loses information; follow-up clarification and analysis are still needed."
+      ],
+      "reference_answer": "",
+      "rubric": [],
+      "difficulty": "medium",
+      "estimated_seconds": 75,
+      "source_ids": [
+        "s-030"
+      ],
+      "origin": "provided",
+      "pool": "both"
+    }
+  ]
+}
